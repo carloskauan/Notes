@@ -12,17 +12,27 @@
 <p>E necessario lembrar que C e case sensitive então não podemes escrever a função main com caracteres Maiusculos</p>
 <p>OBS:Todo final de instrução deve conter os ; no final</p>
 
-<h2>#includes</h2>
+<h2><code>#includes</code></h2>
 
 <p>A linguagem C em si não tem uma grande quantidade de funções mas suas libs dão um grande poder a linguagem</p>
 
-<code> #include <stdio.h> <code> 
-<p>//Para importar funções de entrada e saida de dados</p>
+<code> #include <stdio.h> </code> 
+<p>Para importar funções de entrada e saida de dados</p>
 
 <h2>Estrutura basica</h2>
 
 <p>A estruruta basica do c e a seguinte...</p>
 
 <p>#include <stdio.h> //Na primeiras linhas e onde importamos nossas bibliotecas</p>
-<code>int main(){};<code>
+<code>int main(){};</code>
 <p>//Depois vem a declaração da função main</p>
+  
+<h2><code>printf()</code></h2>
+  
+<p>A função de saida<p>
+  
+  <h2><code>\n</code></h2>
+<p>Caractere de nova linha<p>
+  
+<h2><code>/* */</code></h2>
+<p>Comentarios</p>  
