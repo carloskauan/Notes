@@ -36,3 +36,11 @@
   
 <h2><code>/* */</code></h2>
 <p>Comentarios</p>  
+  
+<h2>Variaveis</h2>
+ 
+<p>Os tipos de variaveis são:<p>
+<p>int // Inteiro</p>
+<p>char // Strings</p>
+<p>float // Numeros com virgulas</p>
+<p>double // Numeros com virgula muito grandes</p>
