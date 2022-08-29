@@ -40,7 +40,40 @@
 <h2>Variaveis</h2>
  
 <p>Os tipos de variaveis são:<p>
-<p>int // Inteiro</p>
+<p>int // Inteiro // %d marcador de valor</p>
 <p>char // Strings</p>
 <p>float // Numeros com virgulas</p>
 <p>double // Numeros com virgula muito grandes</p>
+  
+<p>Para mostras as variaveis no pprint temos que usar o especificador de tipo dentro das aspas</p>
+  
+<code>
+  int x = 5;
+  printf("%d",x);
+</code>
+
+<h2><code>scanf()</code></h2>
+<p>Comando pra entrada de dados</p>
+  
+  <p><code>scanf("%d", &var)</code> //%d Especificador de tipo e &var indicação da variavel podendo pegar mais de dois valores por comando</p>
+
+  <h2><code>sizeof()</code></h2>
+  <code>sizeof(valor);</code>
+  <p>Para medir o valor em bytes de algo</p>
+  
+  <h2>Tamanho em bytes</h2>
+  <p>Char = 1</p>
+  <p>Int = 2</p>
+  <p>Float = 4</p>
+  <p>Double = 8</p>
+  
+  <h2>Tamanhos de ints</h2>
+  <p>short = Inteiros pequenos 2 // %hd maracador de tipo</p>
+  <p>long = inteiros grandes 4 // %ld marcador de tipos</p>
+  <p>signed = inteiros com sinal (negativos e positivos)</p>
+  <p>unsigned = apenas positivos // marcador de tipo %u</p>
+	
+	<p>unsigned short int// %hu</p>
+	<p>unsigned long int // %lu</p>
+	
+	<p>Analisar a necessidade antes de usar</p>
