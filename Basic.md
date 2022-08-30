@@ -77,3 +77,7 @@
 <p>unsigned long int // %lu</p>
 	
 <p>Analisar a necessidade antes de usar</p>
+
+<h2><code>fflaush(stdin)</code></h2>
+
+<p>Limpar buffer com a entrada de teclado</p>
