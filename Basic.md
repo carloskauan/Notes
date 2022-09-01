@@ -71,8 +71,9 @@
 <p>short = Inteiros pequenos 2 // %hd maracador de tipo</p>
 <p>long = inteiros grandes 4 // %ld marcador de tipos</p>
 <p>signed = inteiros com sinal (negativos e positivos)</p>
-<p>unsigned = apenas positivos // marcador de tipo %u</p>
-	
+<p>unsigned = apenas positivos //%u marcador de tipo %u</p>
+<p>octal = base octadecimal // %o marcador de tipo</p>
+<p>hexa = base hexadecimal</p>	
 <p>unsigned short int// %hu</p>
 <p>unsigned long int // %lu</p>
 	
@@ -91,3 +92,5 @@
 <p>Tambem podemos forçar uma conversão de tipo usando (tipo)variavavel</p>
 <p><code>int num = 65; printf("%c", (char)num);</code></p>
 <p>Assim a conversão sera feita para a exibição</p>
+	
+<p>Os tipos char tambem podem utilizar variações na declarações  sendo unsigned char e signed char para delimitar os valores das suas correspondecias em ASCII, o char padrão ja e unsigned mas em alguns complidaores os valores ASCII de alguns char usam valores negativos</p>
