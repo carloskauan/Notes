@@ -81,3 +81,13 @@
 <h2><code>fflaush(stdin)</code></h2>
 
 <p>Limpar buffer com a entrada de teclado</p>
+
+<h2>Char com valor em int</h2>
+<p>OBS: Cada caractere char tem um valor correspondente como int, octal e hexa</p>
+<p>Ex:</p>
+<p>A - %c = A</p>
+<p>A - %d = 65</p>
+
+<p>Tambem podemos forçar uma conversão de tipo usando (tipo)variavavel</p>
+<p><code>int num = 65; printf("%c", (char)num);</code></p>
+<p>Assim a conversão sera feita para a exibição</p>
