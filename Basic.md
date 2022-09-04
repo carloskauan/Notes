@@ -94,3 +94,9 @@
 <p>Assim a conversão sera feita para a exibição</p>
 	
 <p>Os tipos char tambem podem utilizar variações na declarações  sendo unsigned char e signed char para delimitar os valores das suas correspondecias em ASCII, o char padrão ja e unsigned mas em alguns complidaores os valores ASCII de alguns char usam valores negativos</p>
+
+<h2>Operadores logicos</h2>
+
+<p>&& - And</p>
+<p>|| - Or</p>
+<p>! - Not</p>
