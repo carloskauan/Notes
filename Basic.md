@@ -100,3 +100,9 @@
 <p>&& - And</p>
 <p>|| - Or</p>
 <p>! - Not</p>
+	
+<h2> If ternario</h2>
+
+<p>condição ? expressão1 : expressão2;</p>
+<p>Ex:</p>
+<code>x = x > 100 ? 1 : 2<code>
