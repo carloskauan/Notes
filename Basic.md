@@ -105,4 +105,14 @@
 
 <p>condição ? expressão1 : expressão2;</p>
 <p>Ex:</p>
-<code>x = x > 100 ? 1 : 2<code>
+<code>x = x > 100 ? 1 : 2</code>
+
+<h2>Switch</h2>
+
+<p>Condicional por valor conatnate de uma mesma variavel</p>
+<code>switch(variavel){case 'valor': ; break default:}</code>
+	
+<h2>While</h2>
+
+<p>Laço de repetição por condição</p>
+<code>while(condição){	}</code>
