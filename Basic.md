@@ -127,3 +127,7 @@
 
 <p>Um laço que executa primeiro e faz a verificção no final da iteração</p>
 <code>do{codigo}while(condicção);</code>
+
+<h2>break e continue</h2>
+
+<p>O break para um laço e o continue para a iteração atual e começa a proxima</p>
