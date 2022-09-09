@@ -116,3 +116,9 @@
 
 <p>Laço de repetição por condição</p>
 <code>while(condição){	}</code>
+
+<h2>for</h2>
+ 
+<p>Laço de repetição para quando o numero de interaçoes e conhecida pelo usuario</p>
+
+<code>for(x =0; x<=10; n++){ }</code>
