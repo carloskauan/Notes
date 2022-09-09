@@ -122,3 +122,8 @@
 <p>Laço de repetição para quando o numero de interaçoes e conhecida pelo usuario</p>
 
 <code>for(x =0; x<=10; n++){ }</code>
+
+<h2>do..while</h2>
+
+<p>Um laço que executa primeiro e faz a verificção no final da iteração</p>
+<code>do{codigo}while(condicção);</code>
