@@ -131,3 +131,7 @@
 <h2>break e continue</h2>
 
 <p>O break para um laço e o continue para a iteração atual e começa a proxima</p>
+
+<h2><code>putchar(char);</code></h2>
+
+<p>Para imprimir um caractere unico</p>
