@@ -141,4 +141,4 @@
 <p>Vetores devem ser declarados o seu tipo e a quantidade de elementos</p>
 <code> int vet[10];</code>
 <p>Quando e iniciado mas nem um valor e settado, todos os indexs são ocupados com valores aleatorios iguais as variaveis. E quando algumas posições são settadas e outras não, o resto são ocupados por 0</p>
-	
+<code>char vogais[6] = {'a', 'e', 'i', 'o', 'u'};</code>
