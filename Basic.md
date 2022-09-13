@@ -145,6 +145,7 @@
 <p>Quando um vetor não e defindo o seu tamanho, o compilador cria o vetor com mesmo tamanho da quantidade de cargas iniciais</p>
 <p>Ao passar um vetor como parametro de uma função, o C não se importa com o tamanho do verto, mas ss como seu tipo apenas. E Não e dentro de uma função não e possivel saber com quantos elementos um vettor foi declarado.</p>
 <p>Então na hora de passa um vetor para um função, tbm pege e passe seu tamanho</p>
+<p>Para passar vetores de mais de uma dimenção segue o mesmo esquema dos normais, porem so o primiro index pode ser oculto, o resto deve ser obrigatoriamente declarado no parametro</p>
 
 <h2>Constantes</h2>
 <p>Constantes deve ser declaradas foras das funções, inclusive da main. E podem ser declaradas de duas formas com</p>
