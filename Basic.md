@@ -144,3 +144,4 @@
 <code>char vogais[6] = {'a', 'e', 'i', 'o', 'u'};</code>
 <p>Quando um vetor não e defindo o seu tamanho, o compilador cria o vetor com mesmo tamanho da quantidade de cargas iniciais</p>
 <p>Ao passar um vetor como parametro de uma função, o C não se importa com o tamanho do verto, mas ss como seu tipo apenas. E Não e dentro de uma função não e possivel saber com quantos elementos um vettor foi declarado.</p>
+<p>Então na hora de passa um vetor para um função, tbm pege e passe seu tamanho</p>
