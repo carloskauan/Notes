@@ -152,4 +152,4 @@
 <p>Ou</p>
 <code>#define NUM 10</code>
 <p>Mas existe uma diferença entre as duas formas.</p>
-<p>Uma const existe fisicamente na memoria, mas o #define não existe, ele carrega uma valor simbolico, no qual e indicado ao pre-processador que o simbulo que segue vai ficar com o valor que apareçe depois dele. O pre-processesador, antes de compilar substitui todos os simbulos(NUM) pelo valor (10). isso ocorre imediatamente antes da compilação. E o tipo associado ao #define, e o tipo que resulta da expressão declarada apos o simbolo.</p>
+<p>Uma const existe fisicamente na memoria, mas o #define não existe, ele carrega uma valor simbolico, no qual e indicado ao pre-processador que o simbulo que segue vai ficar com o valor que apareçe depois dele. O pre-processesador, antes de compilar substitui todos os simbulos(NUM) pelo valor (10). isso ocorre imediatamente antes da compilação. E o tipo associado ao #define, e o tipo que resulta da expressão declarada apos o simbolo.Constantes definidas por define recebem o nome de constantes simbolicas.</p>
