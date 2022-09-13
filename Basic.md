@@ -145,3 +145,11 @@
 <p>Quando um vetor não e defindo o seu tamanho, o compilador cria o vetor com mesmo tamanho da quantidade de cargas iniciais</p>
 <p>Ao passar um vetor como parametro de uma função, o C não se importa com o tamanho do verto, mas ss como seu tipo apenas. E Não e dentro de uma função não e possivel saber com quantos elementos um vettor foi declarado.</p>
 <p>Então na hora de passa um vetor para um função, tbm pege e passe seu tamanho</p>
+
+<h2>Constantes</h2>
+<p>Constantes deve ser declaradas foras das funções, inclusive da main. E podem ser declaradas de duas formas com</p>
+<code>const int x = 10;</code>
+<p>Ou</p>
+<code>#define NUM 10</code>
+<p>Mas existe uma diferença entre as duas formas.</p>
+<p>Uma const existe fisicamente na memoria, mas o #define não existe, ele carrega uma valor simbolico, no qual e indicado ao pre-processador que o simbulo que segue vai ficar com o valor que apareçe depois dele. O pre-processesador, antes de compilar substitui todos os simbulos(NUM) pelo valor (10). isso ocorre imediatamente antes da compilação. E o tipo associado ao #define, e o tipo que resulta da expressão declarada apos o simbolo.</p>
