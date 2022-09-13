@@ -142,3 +142,4 @@
 <code> int vet[10];</code>
 <p>Quando e iniciado mas nem um valor e settado, todos os indexs são ocupados com valores aleatorios iguais as variaveis. E quando algumas posições são settadas e outras não, o resto são ocupados por 0</p>
 <code>char vogais[6] = {'a', 'e', 'i', 'o', 'u'};</code>
+<p>Quando um vetor não e defindo o seu tamanho, o compilador cria o vetor com mesmo tamanho da quantidade de casas de cimais</p>
