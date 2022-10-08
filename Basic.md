@@ -154,3 +154,9 @@
 <code>#define NUM 10</code>
 <p>Mas existe uma diferença entre as duas formas.</p>
 <p>Uma const existe fisicamente na memoria, mas o #define não existe, ele carrega uma valor simbolico, no qual e indicado ao pre-processador que o simbulo que segue vai ficar com o valor que apareçe depois dele. O pre-processesador, antes de compilar substitui todos os simbulos(NUM) pelo valor (10). isso ocorre imediatamente antes da compilação. E o tipo associado ao #define, e o tipo que resulta da expressão declarada apos o simbolo.Constantes definidas por define recebem o nome de constantes simbolicas.</p>
+
+<h2>Gerar numeros aleatorios</h2>
+	
+<p>Primeiramente temos que importar a lib <stdlib.h> e dpois usarmos</p>
+<code>int x = 1+rand()%10</code>
+<p>Usando 1+ e 10 e possivel chegar a um numero entre 1 e 10, e sem o 1+ e possivel de 0 a 9, OBS:O conjunto de numeros gerados e sempre igual.Para mudar a seed de calculo para gerar numeros diferentes a cada execução devemos utilizar o horario do pc para solucionar o problema.</p>
