@@ -164,4 +164,4 @@
 <code>time(&ultime);</code>
 <code>srand((unsigned)ultime);</code>
 <p>Para mudar a seed com a base no relogio do pc</p>
-<p>Assim podemos usar a mesma função rand que gerara valores diferentes. E temos que importar as libs <stdlib.h> e <time.h><p>
+<p>Assim podemos usar a mesma função rand que gerara valores diferentes. E temos que importar as libs stdlib.h e time.h<p>
