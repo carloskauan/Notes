@@ -160,3 +160,8 @@
 <p>Primeiramente temos que importar a lib <stdlib.h> e dpois usarmos</p>
 <code>int x = 1+rand()%10</code>
 <p>Usando 1+ e 10 e possivel chegar a um numero entre 1 e 10, e sem o 1+ e possivel de 0 a 9, OBS:O conjunto de numeros gerados e sempre igual.Para mudar a seed de calculo para gerar numeros diferentes a cada execução devemos utilizar o horario do pc para solucionar o problema.</p>
+<code>long ultime;</code>
+<code>time(&ultime);</code>
+<code>srand((unsigned)ultime);</code>
+<p>Para mudar a seed com a base no relogio do pc</p>
+<p>Assim podemos usar a mesma função rand que gerara valores diferentes. E temos que importar as libs <stdlib.h> e <time.h><p>
