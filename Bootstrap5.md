@@ -1,9 +1,9 @@
-# Spacing #
+## Spacing ##
 
 Bara modelagem de box model...
 [Spacing](https://getbootstrap.com/docs/5.0/utilities/spacing/)
 
-# Tabelas #
+## Tabelas ##
 
 Para criar uma tabela usamos a tag table com a class table
 
@@ -21,4 +21,3 @@ Para criar uma tabela usamos a tag table com a class table
     </tbody>
 </table> 
 ~~~
-> Uma pessoa disse que não sei o q
