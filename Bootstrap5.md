@@ -31,7 +31,9 @@ Para criar uma navbar
    MyBlog
  </a>
  <ul class="navbar-nav"> <!-- Navegação -->
-   <li class="nav-item"></li> <!-- Iten de navegação -->
+   <li class="nav-item"> <!-- Iten de navegação -->
+       <a class="nav-link" href="#">Link</a> <!-- Link clicavel do item -->
+   </li>
  </ul>
 </nav>
 ~~~
