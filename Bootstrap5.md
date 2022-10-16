@@ -30,7 +30,7 @@ Para criar uma navbar
  <a class="navbar-brand myNav ps-3" href="/"> <!-- Icone da navbar -->
    MyBlog
  </a>
- <ul class="navbar-nav"> <!-- Navegação -->
+ <ul class="navbar-nav me-auto"> <!-- Navegação, use a tag me auto para alinhar os elementos da nagevagação a direita -->
    <li class="nav-item"> <!-- Iten de navegação -->
        <a class="nav-link" href="#">Link</a> <!-- Link clicavel do item -->
    </li>
