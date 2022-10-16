@@ -1,6 +1,6 @@
 ## Spacing ##
 
-Bara modelagem de box model...
+Modelagem de box model...
 [Spacing](https://getbootstrap.com/docs/5.0/utilities/spacing/)
 
 ## Tabelas ##
@@ -20,4 +20,18 @@ Para criar uma tabela usamos a tag table com a class table
         <tr>    
     </tbody>
 </table> 
+~~~
+## Navbar ##
+
+Para criar uma navbar
+
+~~~html
+<nav class="navbar navbar-dark bg-primary"> <!-- Criação da navvar -->
+ <a class="navbar-brand myNav ps-3" href="/"> <!-- Icone da navbar -->
+   MyBlog
+ </a>
+ <ul class="navbar-nav"> <!-- Navegação -->
+   <li class="nav-item"></li> <!-- Iten de navegação -->
+ </ul>
+</nav>
 ~~~
