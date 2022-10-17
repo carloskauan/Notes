@@ -146,3 +146,25 @@ Primeiramente devemos criar a seguinte estrutura
 ~~~
 
 O formulario deve se do tipo hidenn e seu valor value vair o valor do id do campo que sera mandado pra rota e pego com o req.body.id
+
+## Evitar apagar registros instantaneamente ## 
+
+Para evitar esse tipo de acidente devos trabalhar com javascript do front end da seguinte maneira
+
+~~~html
+<form method="POST" action="/categories/delete" onsubmit="function(event, this)">
+  <input type="hidden" name="id" value="<%= cat.id %>">
+  <button class="btn btn-danger">Excluir</button>
+</form>
+~~~
+Devemos adicionar o eveneto na tag e passar a função que vamos criar no js com dois parametros, o primeiro o event que referencia os eventos e o segundo que referencia o proprio formulario
+
+No js deve ser assim dentro da tag script no mesmo
+
+~~~javascript
+    function confirmDelete(event, form){ //Função que vai fazer a confirmação
+      event.preventDefault(); // Impedir o envio do submit
+      var decision = confirm("Voçê deseja apagar essa categoria?"); // Capturar confirmação
+      if (decision) form.submit(); // Caso verdade o envio e feito
+    }
+~~~
