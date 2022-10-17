@@ -128,6 +128,9 @@ Relacionamentos
 Model.hasMany(Model); 1pM
 Model.belongsTo(Model);1p1
 
+Model.destroy({where:{campo:campo}}).then(); //Apagar um registro
+
+
 slugify; // Para transformar titulos em slugs no banco de dados para serem usados em urls
 __________________________________________________________
 
@@ -147,3 +150,4 @@ para criar uma tabela usamos a tag table com a class table
         <tr>    
     </tbody>
 </table> 
+
