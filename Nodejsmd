@@ -133,21 +133,16 @@ Model.destroy({where:{campo:campo}}).then(); //Apagar um registro
 
 slugify; // Para transformar titulos em slugs no banco de dados para serem usados em urls
 __________________________________________________________
+## Botão que apaga dados do banco ##
 
-BOOTSTRAP
+Primeiro devemos esta em uma rota em que dados do banco são passados para o ejs
 
-para criar uma tabela usamos a tag table com a class table
+Primeiramente devemos criar a seguinte estrutura
+~~~html
+<form method="POST" action="/categories/delete">
+  <input type="hidden" name="id" value="<%= cat.id %>">
+  <button class="btn btn-danger">Excluir</button>
+</form>
+~~~
 
-<table class="table"> // use a tag table-bodered para estlizar as bordas da table
-    <thead> //Cabecalho da tabela
-        <tr>//linha da tabela
-            <th>SLA</th>//Coluna da tabela        
-        </tr>
-    </thead>
-    <tbody>//Corpo da tabela
-        <tr>Linha do corpo
-            <th>Dado da coluna</th>
-        <tr>    
-    </tbody>
-</table> 
-
+O formulario deve se do tipo hidenn e seu valor value vair o valor do id do campo que sera mandado pra rota e pego com o req.body.id
