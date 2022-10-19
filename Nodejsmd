@@ -129,7 +129,7 @@ Model.hasMany(Model); 1pM
 Model.belongsTo(Model);1p1
 
 Model.destroy({where:{campo:campo}}).then(); //Apagar um registro
-
+Model.update({campo: novoValor, campo2: novoValor}, {where:{campo: campo});//Para editar um dado
 
 slugify; // Para transformar titulos em slugs no banco de dados para serem usados em urls
 __________________________________________________________
