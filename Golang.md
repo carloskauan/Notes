@@ -16,10 +16,14 @@ var nome string = "Caralho"
 ~~~
 
 As variaveis do tipo float existem dois tipo float32 para reais pequenos e float64 para reais grandes equivalente ao double
-
 ~~~go
 var taxa float32 = 1.05
 var pi float64 = 3.1415926535897932384626433832795028841971
+~~~
+Quando uma variavel e iniciada sem nem um valor ela assume o valor de zero quando numero e de uma string vazia quando string
+E possivel iniciar uma variavel sem definir o tipo, então o compilador defini o tipo de acordo com o conteudo;
+~~~go
+var nome = "Carlos"
 ~~~
 
 ## Funções de modulos ##
