@@ -25,6 +25,7 @@ E possivel iniciar uma variavel sem definir o tipo, então o compilador defini o
 ~~~go
 var nome = "Carlos"
 ~~~
+No caso das variaveis float quando não se declara o tipo o compilador usa sempre o maior float64 
 
 ## Funções de modulos ##
 As funções de modulos sempre tem o nome do modulo e a primeira letra da função maiuscula
@@ -32,7 +33,7 @@ As funções de modulos sempre tem o nome do modulo e a primeira letra da funç�
 modulo.Func()
 ~~~
 
-## Print ##
+## Println ##
 Para poder printar algo devemos primeiro importar o pacote fmt
 
 ~~~go
@@ -42,4 +43,14 @@ E dar dar o comando print
 
 ~~~go
 fmt.Println("Kraaiiiii", var,"Nossaaa")
+~~~
+## TypeOf ##
+Para verificarmos os tipos das variaveis usamos o comando TypeOf importado do pacote reflect
+
+~~~go
+import "reflect"
+~~~
+Seu comando...
+~~~go
+reflect.TypeOf(variavel)
 ~~~
