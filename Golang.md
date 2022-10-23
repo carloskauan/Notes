@@ -119,3 +119,47 @@ E o retorno e convencional
 ~~~go
 return 0
 ~~~
+### Função com multiplos retornos ###
+Nas funções tambem conseguimos ter mais de um retorno seguindo a seguinte estrutura
+~~~go
+func nameIdade() (int, string){
+  var idade int
+  var nome string
+  
+  return idade, nome
+}
+~~~
+Para guardamos os valores dos retornos nas variaveis...
+~~~go
+nome, idade := nameIdade()
+~~~
+Os valores são guardados na mesma ordem do return, aonde nome retorna primeiro e idade logo em seguida
+E quando não queremos utilizar um dos valores do retorno utilizamos o _ para ignorar
+~~~go
+_, idade := nameIdade() //Ignorar o retorno nome
+nome, _ := nameIdade() //Ignorar o retorno idade
+~~~
+Isso se aplica para n retornos
+
+## Exit ##
+Para sair de forma correta do sistema pode usar o pacote os e a função exit para dar encerramento seguro do programa
+~~~go
+import "os"
+os.Exit(0)
+~~~
+Use 0 para indicar que tudo ocorreu sem erros e -1 para indicar que algo deu errado
+
+## Net/http ##
+O pacote utilizado para fazer requisições a internet e o net/http
+~~~go
+import "net/http"
+~~~
+### Get ###
+O para realizar um get usamos o comando
+~~~go
+http.Get("url")
+~~~
+O metodo http.Get tem dois tipos de retorno o primeiro a resposta e o segundo erro
+~~~go
+resp, err = http.Get("Url")
+~~~
