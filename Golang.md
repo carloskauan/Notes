@@ -99,3 +99,23 @@ switch var{
     coding
 }
 ~~~
+
+## Funções ##
+Em go as funções em levam o prefixo func
+As funções sem retorno não precisam de nem um indicativo
+~~~go
+func showDates(){
+
+}
+~~~
+E funções com retorno devem seguir a seguinte sintax
+~~~go
+func returnNumber() int{
+
+}
+~~~
+Aonde o tipo e localizado na frente do nome da função depois dos parenteses
+E o retorno e convencional
+~~~go
+return 0
+~~~
