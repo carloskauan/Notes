@@ -159,7 +159,7 @@ O para realizar um get usamos o comando
 ~~~go
 http.Get("url")
 ~~~
-O metodo http.Get tem dois tipos de retorno o primeiro a resposta e o segundo erro
+O metodo http.Get tem dois tipos de retorno o primeiro a resposta da requisição e o segundo erro
 ~~~go
 resp, err = http.Get("Url")
 ~~~
