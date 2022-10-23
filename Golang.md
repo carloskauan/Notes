@@ -11,7 +11,7 @@ package main
 ## Variaveis ##
 As variavei são tipadas e declaradas com var mas seu tipo e expecificado dps do nome da variavel
 
-~~~go
+~~~gol
 var nome string = "Caralho"
 ~~~
 
@@ -25,7 +25,12 @@ E possivel iniciar uma variavel sem definir o tipo, então o compilador defini o
 ~~~go
 var nome = "Carlos"
 ~~~
-No caso das variaveis float quando não se declara o tipo o compilador usa sempre o maior float64 
+No caso das variaveis float quando não declaradas o tipo o compilador usa sempre o maior float64
+
+E tambem temos a declaração curta de variaveis aonde não precizamos por o prefixo var e nem o tipo
+~~~go
+nome := "Carlos"
+~~
 
 ## Funções de modulos ##
 As funções de modulos sempre tem o nome do modulo e a primeira letra da função maiuscula
