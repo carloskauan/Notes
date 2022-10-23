@@ -73,3 +73,29 @@ Seu comando...
 ~~~go
 reflect.TypeOf(variavel)
 ~~~
+## If Else ##
+Em Go as condicional if e else if so aceitam expressões que retornam booleans e não tem os parenteses seguindo o formato
+
+~~~go
+if var == 1{
+  codigo
+}else if var == 2{
+  codigo
+}else{
+  codigo
+}
+~~~
+
+## Switch ##
+No Switch a estrutura segue o mesmo padrão de outras linguagens so que não existe a necessidade de usar o break pois a execução para apos usar executar cada case
+
+~~~go
+switch var{
+  case 1:
+    coding
+  case 2:
+    coding
+  default:
+    coding
+}
+~~~
