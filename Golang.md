@@ -30,7 +30,7 @@ No caso das variaveis float quando não declaradas o tipo o compilador usa sempr
 E tambem temos a declaração curta de variaveis aonde não precizamos por o prefixo var e nem o tipo
 ~~~go
 nome := "Carlos"
-~~
+~~~
 
 ## Funções de modulos ##
 As funções de modulos sempre tem o nome do modulo e a primeira letra da função maiuscula
@@ -49,6 +49,20 @@ E dar dar o comando print
 ~~~go
 fmt.Println("Kraaiiiii", var,"Nossaaa")
 ~~~
+
+## Scanf ##
+Para receber entrada de dados usamos o scanf
+~~~go
+fmt.Scanf("%d", &var)
+~~~
+Na funçao scanf usamos o especificador de formato para dizer que esperamos um inteiro e passamos o ponteiro da nossa variavel para a função guardar o a entrada.
+
+Porem uma forma mais simples de entrar com dados e usando a função scan que não precisa de especificador de formato
+~~~go
+fmt.Scan(&var)
+~~~
+Na função scan so e preciso passar o endereço de memoria da variavel
+
 ## TypeOf ##
 Para verificarmos os tipos das variaveis usamos o comando TypeOf importado do pacote reflect
 
