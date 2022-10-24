@@ -163,3 +163,20 @@ O metodo http.Get tem dois tipos de retorno o primeiro a resposta da requisiçã
 ~~~go
 resp, err = http.Get("Url")
 ~~~
+## Laços de repetição ##
+Em Go não temos o WHile então todos os loops são feitos com for
+Um for sem nem um parametro roda infinitamente
+~~~go
+for{
+
+}
+~~~
+## Array ##
+Arrays tem um Tamanho fixo e deve ser declarado seu tipo
+~~~go
+var arry [4]string
+~~~
+Mas temos uma abstração de array chamada slice aonde seu tamanho e variavel
+~~~go
+arry := []string{"Jubileu","Jãozin","Maria"}
+~~~
