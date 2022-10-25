@@ -180,3 +180,8 @@ Mas temos uma abstração de array chamada slice aonde seu tamanho e variavel
 ~~~go
 arry := []string{"Jubileu","Jãozin","Maria"}
 ~~~
+Para ler quantos elementos um array tem e qual sua capacidade usamos a função len() e cap()
+~~~go
+len(array)//Retorna quantos itens tem no array
+cap(array)//Retorna a capacidade do array
+~~~
