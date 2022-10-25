@@ -171,6 +171,20 @@ for{
 
 }
 ~~~
+Podemos utilizar um for normalmente
+~~~go
+for c := 1; c <= 10; c++{
+
+}
+~~~
+### Percorrer um array ###
+Podemos utiliar a propriedade range para percorrer um array
+~~~go
+for index, elemento := range array{
+
+}
+~~~
+A função range retorna 2 valores, o index na primeira posição e o elemento da vez na segunda opçãom, essas variaveis são utilizadas dentro do loop.
 ## Array ##
 Arrays tem um Tamanho fixo e deve ser declarado seu tipo
 ~~~go
