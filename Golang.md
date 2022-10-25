@@ -185,3 +185,8 @@ Para ler quantos elementos um array tem e qual sua capacidade usamos a função 
 len(array)//Retorna quantos itens tem no array
 cap(array)//Retorna a capacidade do array
 ~~~
+Para adicionarmos um novo elemento ao array usamos a função append
+~~~
+append(array, "Dado")
+~~~
+Sempre que um array com sua capacidade maxima e tem um item adicionado o slice cria um novo array com o tamanho do array anterior dobrado
