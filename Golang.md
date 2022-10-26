@@ -217,3 +217,14 @@ Para adicionarmos um novo elemento ao array usamos a função append
 append(array, "Dado")
 ~~~
 Sempre que um array com sua capacidade maxima e tem um item adicionado o slice cria um novo array com o tamanho do array anterior dobrado
+
+## Sleep
+Para darmos um sleep precisamos importar o pacote "time" e usarmos função sleep e seus parametros
+~~~go
+import "time"
+
+func main(){
+  time.Sleep( 6 * time.Minute)
+}
+~~~
+Na função sleep o primeiro parametro e a quantidade e o segundo e a medida Minute, Second, Hour
