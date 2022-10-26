@@ -31,6 +31,19 @@ E tambem temos a declaração curta de variaveis aonde não precizamos por o pre
 ~~~go
 nome := "Carlos"
 ~~~
+## Constantes
+Para usarmos constantes temos que declara-las fora da função main e antes de qualquer outra função
+
+~~~go
+package main
+import "fmt"
+
+const id = 15
+
+func main(){
+  fmt.Println(id)
+}
+~~~
 
 ## Funções de modulos ##
 As funções de modulos sempre tem o nome do modulo e a primeira letra da função maiuscula
