@@ -234,7 +234,14 @@ Para ler aqrquivos usamos o pacote os e a seguinte função
 ~~~go
 aquivo, erro := os.Open("Caminho")
 ~~~
-A primeira variavel armazena o arquivo e a segunda um possivel erro
+A primeira variavel armazena o arquivo e a segunda um possivel erro. Mas essa função retornar puramente o ponteiro do arquivo
+Para ler de uma forma mais util usaremos o pacote io/ioutil e para ler o arquivo a função readfile
+~~~go
+import 'io/ioutil"
+
+resp, err := ioutil.ReadFile("caminho")
+~~~
+Essa função retornar um conjunto de bytes mas para transformar em algo legivel convertemos os
 
 ## Tratar erros
 Para tratar erros de uma função usamos o if 
