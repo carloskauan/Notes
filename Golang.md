@@ -228,3 +228,19 @@ func main(){
 }
 ~~~
 Na função sleep o primeiro parametro e a quantidade e o segundo e a medida Minute, Second, Hour
+
+## Ler arquivos 
+Para ler aqrquivos usamos o pacote os e a seguinte função
+~~~go
+aquivo, erro := os.Open("Caminho")
+~~~
+A primeira variavel armazena o arquivo e a segunda um possivel erro
+
+## Tratar erros
+Para tratar erros de uma função usamos o if 
+~~~go
+resp, err := http.Get("www.go.dev")
+if err != nil{
+  fmt.Println(err)
+}
+~~~
