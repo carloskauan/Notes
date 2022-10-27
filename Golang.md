@@ -241,7 +241,21 @@ import 'io/ioutil"
 
 resp, err := ioutil.ReadFile("caminho")
 ~~~
-Essa função retornar um conjunto de bytes mas para transformar em algo legivel convertemos os
+Essa função retornar um conjunto de bytes mas para transformar em algo legivel convertemos o resp em string para usar e darmos print por exemplo
+Porem esse metodo faz somente a leitura do arquivo inteiro e podemos utilizar outro metodo para ler algo especifico do arquivo
+Usamos o pacote bufio e a função os.open que vimos acima e a função buffio.newreader() da seguinte forma
+~~~go
+import(
+  "os"
+  "bufio"
+)
+
+cont, err := os.Open("caminho")
+lido := bufio.NewReader(cont)
+linha, err := lido.ReadString('\n')
+~~~
+Em lido e feito a leitura do conteudo do ponteiro da variavel cont que utiliza a o os.Open, e em linha e armazenado o fatiamente da leitura do conteudo. Nos parametros dp readstring e passao o byte limite de ate aonde a leitura vai ser feita
+>Esse parametro de limite de leitura deve ser declardo com aspas simples pois indica o byte de quebra de linha, ou seja so sera lido ate i final na primeira linha
 
 ## Tratar erros
 Para tratar erros de uma função usamos o if 
