@@ -255,7 +255,7 @@ lido := bufio.NewReader(cont)
 linha, err := lido.ReadString('\n')
 ~~~
 Em lido e feito a leitura do conteudo do ponteiro da variavel cont que utiliza a o os.Open, e em linha e armazenado o fatiamente da leitura do conteudo. Nos parametros dp readstring e passao o byte limite de ate aonde a leitura vai ser feita
->Esse parametro de limite de leitura deve ser declardo com aspas simples pois indica o byte de quebra de linha, ou seja so sera lido ate i final na primeira linha
+>Esse parametro de limite de leitura deve ser declardo com aspas simples pois indica o byte de quebra de linha, ou seja so sera lido ate final na primeira linha
 
 ## Tratar erros
 Para tratar erros de uma função usamos o if 
