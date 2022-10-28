@@ -239,9 +239,11 @@ Na função sleep o primeiro parametro e a quantidade e o segundo e a medida Min
 Para ler aqrquivos usamos o pacote os e a seguinte função
 ~~~go
 aquivo, erro := os.Open("Caminho")
+arquivo.Close() 
 ~~~
 A primeira variavel armazena o arquivo e a segunda um possivel erro. Mas essa função retornar puramente o ponteiro do arquivo
-Para ler de uma forma mais util usaremos o pacote io/ioutil e para ler o arquivo a função readfile
+Para ler de uma forma mais util usaremos o pacote io/ioutil e para ler o arquivo a função readfile.E use a função close para fechar um arquivo apos acabar de utilizar o arquivo
+
 ~~~go
 import 'io/ioutil"
 
