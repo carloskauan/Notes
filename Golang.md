@@ -217,6 +217,12 @@ Para adicionarmos um novo elemento ao array usamos a função append
 append(array, "Dado")
 ~~~
 Sempre que um array com sua capacidade maxima e tem um item adicionado o slice cria um novo array com o tamanho do array anterior dobrado
+##  Append
+Para adicionar um elemento ao array usavos o metodo append
+~~~go
+var nomes []string
+nomes = append(nomes, elemento)
+~~~
 
 ## Sleep
 Para darmos um sleep precisamos importar o pacote "time" e usarmos função sleep e seus parametros
