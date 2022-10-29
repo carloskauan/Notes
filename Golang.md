@@ -272,7 +272,31 @@ if err == io.EOF{
   break
 }
 ~~~
-
+Um dos metods que permite criar e ler um arquivo caso ele não exista e o seguinte
+~~~go
+arquivo, err := os.ReadFile("arquivo", flag, permissão)
+~~~
+O metodo readfile tem alguns argumentos a mais como suas Flasg de permissão para tratar arquivos
+~~~go
+// Exactly one of O_RDONLY, O_WRONLY, or O_RDWR must be specified.
+O_RDONLY int = syscall.O_RDONLY // open the file read-only.
+O_WRONLY int = syscall.O_WRONLY // open the file write-only.
+O_RDWR   int = syscall.O_RDWR   // open the file read-write.
+// The remaining values may be or'ed in to control behavior.
+O_APPEND int = syscall.O_APPEND // append data to the file when writing.
+O_CREATE int = syscall.O_CREAT  // create a new file if none exists.
+O_EXCL   int = syscall.O_EXCL   // used with O_CREATE, file must not exist.
+O_SYNC   int = syscall.O_SYNC   // open for synchronous I/O.
+O_TRUNC  int = syscall.O_TRUNC  // truncate regular writable file when opened.
+~~~
+Tbm podendo-se usar varias flags atraves do operador And |
+E tamos o parametro de permissão de sistema sendo ele 0666 o padrão.
+Exemplo de utilização
+~~~go
+arquivo, err := os.OpenFile("logs.txt", os.O_RDWR | os.O_CREATE, 0666
+~~~
+Suas flags tem a permissão de leitura e escrita os.O_RDWR e a permissão de criação de arquivo caso o mesmo não exista os.O_CREATE
+E a permissão padrão do sistema
 ### Cortar espaços
 Para tirar carcteres vazio, espaços e quebras de linha de uma string
 
