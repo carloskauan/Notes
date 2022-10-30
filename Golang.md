@@ -293,10 +293,16 @@ Tbm podendo-se usar varias flags atraves do operador And |
 E tamos o parametro de permissão de sistema sendo ele 0666 o padrão.
 Exemplo de utilização
 ~~~go
-arquivo, err := os.OpenFile("logs.txt", os.O_RDWR | os.O_CREATE, 0666
+arquivo, err := os.OpenFile("logs.txt", os.O_RDWR | os.O_CREATE | os.O_APPEND, 0666
 ~~~
 Suas flags tem a permissão de leitura e escrita os.O_RDWR e a permissão de criação de arquivo caso o mesmo não exista os.O_CREATE
 E a permissão padrão do sistema
+Para escrever algo no arquivo usamos os write string
+~~~go
+arquivo.WriteString("Dados")
+~~~
+E devemos adicionar a flag os.O_APPEND para que novos registros sejam alocados no arquivo e os antigos não sejam sobrescritos
+>Essa função requer que tudo que seja passado como parametro seja convertido para string
 ### Cortar espaços
 Para tirar carcteres vazio, espaços e quebras de linha de uma string
 
