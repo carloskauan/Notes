@@ -167,7 +167,7 @@ Para registrarmos tempo em go usamos essa formatação
 ~~~go
 import "time"
 
-time.Now("02/01/2006 15:04:05")
+time.Now().Format("02/01/2006 15:04:05")
 ~~~
 [Tabela para formatação](https://go.dev/src/time/format.go) 
 
