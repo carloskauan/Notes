@@ -304,8 +304,12 @@ arquivo.WriteString("Dados")
 E devemos adicionar a flag os.O_APPEND para que novos registros sejam alocados no arquivo e os antigos não sejam sobrescritos
 >Essa função requer que tudo que seja passado como parametro seja convertido para string
 ### Cortar espaços
-Para tirar carcteres vazio, espaços e quebras de linha de uma string
+Para tirar carcteres vazio, espaços e quebras de linha de uma string usamo a string trim space
+~~~go
+import "strings"
 
+strings.TrimSpaces(" STrinsf")
+~~~
 ## Tratar erros
 Para tratar erros de uma função usamos o if 
 ~~~go
