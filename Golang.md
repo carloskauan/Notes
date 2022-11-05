@@ -343,6 +343,17 @@ nome2 := Pessoa{ //Forma rapida
   saldo: "2.50"
 }
 ~~~
+>Essas formas utilizamos quando quisermos popular os atributos especificos, ou seja, quando queremos que alguns atributos não recebam valor e outros recebam. Assim devemos informar so os campos que queremos que recebam os valores EX:
+~~~go
+nome3 := Pessoas{nome:"Gabriel", Saldo := 12.90}
+~~~
+Assim somento os atributos nome e saldo receberam valores enquanto idade continuara zerado
+Tambem temos uma forma mais fapida para instancia a struct
+~~~go
+nome4 := Pessoa{"Arthur", 19, 800.54}
+~~~
+Essa forma necessita que todos o valores sejam settados em ordem
+
 Para acessarmos as os valores da instancia podemos chamar a instancia inteira ou um atributo especifico
 ~~~go
 fmt.Println(nome2)
