@@ -314,3 +314,32 @@ if err != nil{
   fmt.Println(err)
 }
 ~~~
+# Orientação a Objeto
+Go tambem e uma linguagem orientada a objeto e a forma da estrutura mais basica e uma struct em go
+~~~go
+type Nome struct{
+  nome string
+  idade int
+  saldo float32
+}
+~~~
+E para instanciar uma struct em um variavel fazemos assim
+~~~go
+type Pessoa struct{
+  nome string
+  diade int
+  saldo flaot32
+}
+
+var nome1 Pessoa = Pessoa{ //Forma completa
+  nome: "Carlos",
+  idade: 19,
+  saldo: 0.0
+}
+
+nome2 := Pessoa{
+  nome: "Kauan",
+  idade: "20",
+  saldo: "2.50"
+}
+~~~
