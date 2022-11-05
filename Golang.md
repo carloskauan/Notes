@@ -361,3 +361,10 @@ fmt.Println(nome2)
 fmt.Println(nome1.idade)
 ~~~
 Ao chamarmos a instancia inteira e retornadado um array com todos os atributos da instancia.
+
+#Ponteiros
+Para indicarmos o endereço de memoria(ponteiro) de uma variavel usamos os &
+ex:
+~~~go
+
+~~~
