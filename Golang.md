@@ -337,9 +337,15 @@ var nome1 Pessoa = Pessoa{ //Forma completa
   saldo: 0.0
 }
 
-nome2 := Pessoa{
+nome2 := Pessoa{ //Forma rapida
   nome: "Kauan",
   idade: "20",
   saldo: "2.50"
 }
 ~~~
+Para acessarmos as os valores da instancia podemos chamar a instancia inteira ou um atributo especifico
+~~~go
+fmt.Println(nome2)
+fmt.Println(nome1.idade)
+~~~
+Ao chamarmos a instancia inteira e retornadado um array com todos os atributos da instancia.
