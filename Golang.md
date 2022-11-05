@@ -162,6 +162,15 @@ os.Exit(0)
 ~~~
 Use 0 para indicar que tudo ocorreu sem erros e -1 para indicar que algo deu errado
 
+## Registrar tempo
+Para registrarmos tempo em go usamos essa formatação
+~~~go
+import "time"
+
+time.Now("02/01/2006 15:04:05")
+~~~
+[Tabela para formatação](https://go.dev/src/time/format.go) 
+
 ## Net/http ##
 O pacote utilizado para fazer requisições a internet e o net/http
 ~~~go
