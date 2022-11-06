@@ -376,8 +376,15 @@ fmt.Println(nome1.idade)
 Ao chamarmos a instancia inteira e retornadado um array com todos os atributos da instancia.
 
 #Ponteiros
-Para indicarmos o endereço de memoria(ponteiro) de uma variavel usamos os &
+Para indicarmos o endereço de memoria(ponteiro) de uma variavel usamos os & em uma variavel
 ex:
 ~~~go
-
+x := 5
+y := &x
 ~~~
+Assim y recebe o endereço de memoria de x
+~~~go
+*y = 10
+~~~
+Para definir um novo valor pra ser aramazenada no endereço de memoria de x que esta em y usamos a referencia de ponteiro o * assim e possivel manipular o endereço de memoria
+>Sempre que quisermos manipular o endereço de memoria utilizamos o *
