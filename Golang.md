@@ -374,6 +374,15 @@ fmt.Println(nome2)
 fmt.Println(nome1.idade)
 ~~~
 Ao chamarmos a instancia inteira e retornadado um array com todos os atributos da instancia.
+Tambem podemos atribuir de uma forma mais comum a outras linguagens de programação e usando ponteiros
+~~~go
+var nome5 *Pessoa
+nome5 = new(Pessoa)
+nome5.nome = "João"
+nome5.idade = "25"
+nome5.saldo = "0.0"
+~~~
+Dessa fora temos uma instancia da struct usando ponteiros
 
 #Ponteiros
 Para indicarmos o endereço de memoria(ponteiro) de uma variavel usamos os & em uma variavel
