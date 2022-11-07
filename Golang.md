@@ -383,8 +383,13 @@ nome5.idade = "25"
 nome5.saldo = "0.0"
 ~~~
 Dessa fora temos uma instancia da struct usando ponteiros
+>Usando & temos o endereço de memoria e usando * temos o conteudo do endereço
+~~~go
+fmt.Println(&nome5) //Retorna o endereço de memoria
+fmt.Println(*nome5) //Retorna o conteudo do endereço de memoria
+~~~
 
-#Ponteiros
+# Ponteiros
 Para indicarmos o endereço de memoria(ponteiro) de uma variavel usamos os & em uma variavel
 ex:
 ~~~go
