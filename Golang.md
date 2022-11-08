@@ -328,6 +328,9 @@ if err != nil{
 }
 ~~~
 # Orientação a Objeto
+
+### Struct
+
 Go tambem e uma linguagem orientada a objeto e a forma da estrutura mais basica e uma struct em go
 ~~~go
 type Nome struct{
@@ -336,6 +339,7 @@ type Nome struct{
   saldo float32
 }
 ~~~
+### Instancia
 E para instanciar uma struct em um variavel fazemos assim
 ~~~go
 type Pessoa struct{
@@ -388,6 +392,15 @@ Dessa fora temos uma instancia da struct usando ponteiros
 fmt.Println(&nome5) //Retorna o endereço de memoria
 fmt.Println(*nome5) //Retorna o conteudo do endereço de memoria
 ~~~
+
+### Metodos
+Os metodos da struct ficam fora do bloco do codigo da struct
+~~~go
+func (this *Pessoa) Falar struct{
+  fmt.Println(this.nome,"Esta falando...")
+}
+~~~
+O metodo da struct a referencia com o (this *NomeStruct) para referenciar a struct usando so o this.atributos para acessar os atributos dentro dos metodos
 
 # Ponteiros
 Para indicarmos o endereço de memoria(ponteiro) de uma variavel usamos os & em uma variavel
