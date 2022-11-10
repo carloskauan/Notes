@@ -337,6 +337,7 @@ type Nome struct{
   nome string
   idade int
   saldo float32
+  amigos string
 }
 ~~~
 ### Instancia
@@ -346,6 +347,7 @@ type Pessoa struct{
   nome string
   diade int
   saldo flaot32
+  amigo string
 }
 
 var nome1 Pessoa = Pessoa{ //Forma completa
@@ -392,6 +394,7 @@ Dessa fora temos uma instancia da struct usando ponteiros
 fmt.Println(&nome5) //Retorna o endereço de memoria
 fmt.Println(*nome5) //Retorna o conteudo do endereço de memoria
 ~~~
+O metodo da struct a referencia com o (this *NomeStruct) para referenciar a struct usando so o this.atributos para acessar os atributos dentro dos metodos
 
 ### Metodos
 Os metodos da struct ficam fora do bloco do codigo da struct
@@ -399,8 +402,20 @@ Os metodos da struct ficam fora do bloco do codigo da struct
 func (this *Pessoa) Falar struct{
   fmt.Println(this.nome,"Esta falando...")
 }
+
+### Relações entre structs
+Para realizarmos operações entre structs devemos fazer o seguinte no metodo
+~~~go
+func (this *Pessoa) fazerAmigo(amigo *Pessoa){
+  this.amigo = amigo.nome
+  amigo.amigo = this.nome
+}
 ~~~
-O metodo da struct a referencia com o (this *NomeStruct) para referenciar a struct usando so o this.atributos para acessar os atributos dentro dos metodos
+Aqui nesse metodo dizemos que queremos adicionar uma pessoa como amigo de outra então nos parametros passamos amigo com o tipo da classe e o * porque queremos recebr um endereço de memoria como parametro
+~~~go
+nome5.fazerAmigo(&nome4)
+~~~
+Na hora de chamarmos a função e passarmos a outra instancia devemos utilizar o & junto com o nome da instancia, pois assim estamos passando o ponteiro como parametro 
 
 # Ponteiros
 Para indicarmos o endereço de memoria(ponteiro) de uma variavel usamos os & em uma variavel
