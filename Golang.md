@@ -417,6 +417,10 @@ nome5.fazerAmigo(&nome4)
 ~~~
 Na hora de chamarmos a função e passarmos a outra instancia devemos utilizar o & junto com o nome da instancia, pois assim estamos passando o ponteiro como parametro 
 
+### Visibilidade
+Para tornarmos os atributos de uma struct visiveis em outros documentos devemos colocar os nomes dos campos com letras maiusculas assim
+>Atributos com letras minusculas so são visiveis  somente dentro do arquivo da struct
+
 ## Ponteiros
 Para indicarmos o endereço de memoria(ponteiro) de uma variavel usamos os & em uma variavel
 ex:
