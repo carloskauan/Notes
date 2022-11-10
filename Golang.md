@@ -402,7 +402,7 @@ Os metodos da struct ficam fora do bloco do codigo da struct
 func (this *Pessoa) Falar struct{
   fmt.Println(this.nome,"Esta falando...")
 }
-
+~~~
 ### Relações entre structs
 Para realizarmos operações entre structs devemos fazer o seguinte no metodo
 ~~~go
