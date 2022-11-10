@@ -417,7 +417,7 @@ nome5.fazerAmigo(&nome4)
 ~~~
 Na hora de chamarmos a função e passarmos a outra instancia devemos utilizar o & junto com o nome da instancia, pois assim estamos passando o ponteiro como parametro 
 
-# Ponteiros
+## Ponteiros
 Para indicarmos o endereço de memoria(ponteiro) de uma variavel usamos os & em uma variavel
 ex:
 ~~~go
@@ -430,3 +430,35 @@ Assim y recebe o endereço de memoria de x
 ~~~
 Para definir um novo valor pra ser aramazenada no endereço de memoria de x que esta em y usamos a referencia de ponteiro o * assim e possivel manipular o endereço de memoria
 >Sempre que quisermos manipular o endereço de memoria utilizamos o *
+
+## Modularização(pacotes)
+Para separarmos arquivos em modulos/pacotes devemos fazemos o seguinte
+~~~go
+///src/pkg/arquivo1.go
+
+package arquivo1
+
+func somar(a int, b int){
+  return a+b
+}
+~~~
+O package deve conter o nome que sera chamado
+E para chamarmos esse modulo usamos
+~~~go
+///src/main.go
+
+package main
+
+import c "pkg/arquivo1"
+
+func main(){
+  soma := c.somar(1, 2)
+}
+~~~
+O go sempre pocura os arquivos de importação dentra da pasta src então não e necessario colocar src
+Voce deve colocar o caminho da pasta a partir do diretorio principal
+Antes do caminho podemos utilizar um apelidado no qual sera uma forma de referenciar o pacote chamado dentro do codigo principal
+
+### Gerenciador de dependencias
+Em casos de problemas ao importar podemos usar o comando ```go mod``` no terminal para criarmos o gerenciador de dependencias 
+Esse gerenciador e semelhante ao package.json do nodejs aonde estão listado todas nossas dependencias do projeto e tambem a versão do go utilizada no projeto juntamente com outras informações
