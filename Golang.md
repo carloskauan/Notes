@@ -525,7 +525,8 @@ Na função de resposta pra rquisição exectempalte o ultimo parametros utiliza
 ~~~go
 temp.ExecuteTemplate(resp, "index", var)
 ~~~
-O ultimo parametro passamos a variavel com os dados que queremos passar pro front
+O ultimo parametro passamos a variavel ou array com os dados que queremos passar pro front
+
 E para usarmos um dado passado pro front usamos
 
 ~~~html
@@ -542,4 +543,5 @@ Para renderizar recursos automaticamaneto no html utilizamos a propriedade range
 </body>
 ~~~
 >Precisamos de uma vetor para usarmos esse metodo
+
 Esse metodo fara uma leitura na no array puxand elemento por elemento e renderizando no html.
