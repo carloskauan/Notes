@@ -466,3 +466,12 @@ Antes do caminho podemos utilizar um apelidado no qual sera uma forma de referen
 ### Gerenciador de dependencias
 Em casos de problemas ao importar podemos usar o comando ```go mod``` no terminal para criarmos o gerenciador de dependencias 
 Esse gerenciador e semelhante ao package.json do nodejs aonde estão listado todas nossas dependencias do projeto e tambem a versão do go utilizada no projeto juntamente com outras informações
+
+# Back-end
+
+Para Subirmos um servidor em go usamos o pacote net/http usando a função
+
+~~~go
+http.ListenAndServe(":PORTA", nil)
+~~~
+Assim ja temos um servidor ativo
