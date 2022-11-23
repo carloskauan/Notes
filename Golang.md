@@ -523,14 +523,20 @@ O pacote html/teplate funciona como view engine podendo renderizar  as paginas h
 Na função de resposta pra rquisição exectempalte o ultimo parametros utilizamos um dados para passar e ser usado no front
 
 ~~~go
-temp.ExecuteTemplate(resp, "index", var)
+type Data struct{
+  Nome string
+}
+
+datas := Data{Nome: "Carlos"}
+temp.ExecuteTemplate(resp, "index", datas)
 ~~~
 O ultimo parametro passamos a variavel ou array com os dados que queremos passar pro front
+>Essa variavel deve ser uma instancia de uma struct para assim no front chamarmos os nomes de suas propriedades
 
 E para usarmos um dado passado pro front usamos
 
 ~~~html
-<h1>{{.Data}}</h1>
+<h1>{{.Nome}}</h1>
 ~~~
 >Sempre usando o as 2 {} e o .
 
@@ -540,6 +546,7 @@ Para renderizar recursos automaticamaneto no html utilizamos a propriedade range
 <body>
   {{range .}}
   <p>{{.Nome}}<p>
+  {{end}}
 </body>
 ~~~
 >Precisamos de uma vetor para usarmos esse metodo
