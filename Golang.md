@@ -541,5 +541,5 @@ Para renderizar recursos automaticamaneto no html utilizamos a propriedade range
   <p>{{.Nome}}<p>
 </body>
 ~~~
->Precisamos de uma strauct para usarmos esse metodo
-Esse metodo fara uma leitura na struct puxand elemento por elemento e renderizando no html.
+>Precisamos de uma vetor para usarmos esse metodo
+Esse metodo fara uma leitura na no array puxand elemento por elemento e renderizando no html.
