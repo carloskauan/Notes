@@ -469,9 +469,51 @@ Esse gerenciador e semelhante ao package.json do nodejs aonde estão listado tod
 
 # Back-end
 
+##Subir server
+
 Para Subirmos um servidor em go usamos o pacote net/http usando a função
 
 ~~~go
 http.ListenAndServe(":PORTA", nil)
 ~~~
-Assim ja temos um servidor ativo
+Assim ja temos um servidor ativo.
+
+## Carregar arquivos html
+
+Para respondermos a resquisição de com um arquivo html temos preimeiro que criar uma pasta para os templetes htmls e carregarmos eles dentro de uma variavel ou constante
+~~~go
+import "html/template"
+
+const temp = tamplate.Must(temaplate.ParseGlob(("caminhoView/*.html"))
+~~~
+Assim pegamos todos os arquivos de uma pasta e carregamos dentro do constante temp para podermos usar nas respostas das requisições.
+Para o go poder entender os arquivos htmls temos que fazer uma pequena auteração no codigo da seguinte forma
+~~~html
+{{define "index"}}
+<!DOCTYPE html>
+<html lang="pt-br" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Loja</title>
+  </head>
+  <body>
+    Bem vindo a loja
+  </body>
+</html>
+{{end}}
+~~~
+Adicionamos a linha {{define "index"}} alterando pro nome do aqruivo no começo e {{end}} no final para que o tample entenda que e um arquivo a ser rendereizado numa determinada rota
+
+## Roteamento
+Na definição de rotas usamos o handle func do net/http para definirmos a rota e a função de resposta
+~~~go
+http.HandleFunc("/rota", home)
+~~~
+>Em home e aonde chamaremos a função que criamos pra resposta da requisição na rota
+E na função de resposta temos a segeuinte estrutura
+~~~go
+func home(w http.ResponseWrite,c http.Resquest){
+  temp.ExecTemplate(w,"index", nil)
+}
+~~~
+A função temp.ExecTemplate(w, "index", nil) e aonde usamos os templetes carregados da pasta na constante. E dentro dos parametros dessa função temos w que respresenta a resposta e "index" o nome do arquivo a ser carregado e.
