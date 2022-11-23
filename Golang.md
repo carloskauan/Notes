@@ -526,3 +526,20 @@ Na função de resposta pra rquisição exectempalte o ultimo parametros utiliza
 temp.ExecuteTemplate(resp, "index", var)
 ~~~
 O ultimo parametro passamos a variavel com os dados que queremos passar pro front
+E para usarmos um dado passado pro front usamos
+
+~~~html
+<h1>{{.Data}}</h1>
+~~~
+>Sempre usando o as 2 {} e o .
+
+### range
+Para renderizar recursos automaticamaneto no html utilizamos a propriedade range
+~~~html
+<body>
+  {{range .}}
+  <p>{{.Nome}}<p>
+</body>
+~~~
+>Precisamos de uma strauct para usarmos esse metodo
+Esse metodo fara uma leitura na struct puxand elemento por elemento e renderizando no html.
