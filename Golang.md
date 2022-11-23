@@ -517,3 +517,12 @@ func home(w http.ResponseWrite,c http.Resquest){
 }
 ~~~
 A função temp.ExecTemplate(w, "index", nil) e aonde usamos os templetes carregados da pasta na constante. E dentro dos parametros dessa função temos w que respresenta a resposta e "index" o nome do arquivo a ser carregado e.
+
+## View Engine
+O pacote html/teplate funciona como view engine podendo renderizar  as paginas html, epegar informações do  back e utilizar no front e usar trechos de codigo no html como ejs.
+Na função de resposta pra rquisição exectempalte o ultimo parametros utilizamos um dados para passar e ser usado no front
+
+~~~go
+temp.ExecuteTemplate(resp, "index", var)
+~~~
+O ultimo parametro passamos a variavel com os dados que queremos passar pro front
