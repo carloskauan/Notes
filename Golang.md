@@ -552,3 +552,7 @@ Para renderizar recursos automaticamaneto no html utilizamos a propriedade range
 >Precisamos de uma vetor para usarmos esse metodo
 
 Esse metodo fara uma leitura na no array puxand elemento por elemento e renderizando no html.
+
+## Mysql
+
+
