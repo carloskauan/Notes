@@ -555,4 +555,29 @@ Esse metodo fara uma leitura na no array puxand elemento por elemento e renderiz
 
 ## Mysql
 
+### Conexão
+Para fazermos conexão com banco de dados mysql precisamos da biblioteca dos seguintes pacotes
+~~~go
+"database/sql"
+_"github.com/go-sql-driver/mysql"
+~~~
+>O _ indica que não usaremos o pacote imdediatamente mas sim ao longo do codigo
 
+Para instalar o mysql driver usamos o comando 
+~~~sh
+$ go get -u github.com/go-sql-driver/mysql
+~~~
+
+E apara conectar...
+~~~go
+func ConnectDb(){
+  var err error
+
+  db, err = sql.Open("mysql", "user:senha@tcp(host:porta)/banco")
+  if err == nil{
+    fmt.Println("CONEXÃO ESTABELICIDA COM SUCESSO")
+  }else{
+    panic(err)
+  }
+}
+~~~
