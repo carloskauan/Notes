@@ -593,3 +593,30 @@ type Product struct{
   Quant int
 }
 ~~~
+E logo em seguida criar uma função para pegar os dados do banco e disponibilizar para uso
+~~~go
+func Get()[]*Product{
+  products := []*Product{}
+  res, err := db.Query("SELECT * FROM products")
+  if err != nil{
+    fmt.Println("Erro ao ao realizar query\n", err)
+    return nil
+  }
+  for res.Next(){
+    var product Product
+    if err := res.Scan(&product.Id, &product.Nome, &product.Desc, &product.Price, &product.Quant); err != nil{
+      fmt.Println("Erro no scan\n",err)
+      return nil
+    }
+    products = append(products, &product)
+  }
+  return products
+}
+~~~
+Essa função deve retornar um ponteiro de array no qual sera um slice do mesmo tipo da strcut que criamos, esse array recebera os dados dessa structs.
+Com a função db.query e feita uma query que busca todos os os registro da tabela no banco, esses registros vem em forma de array de ponteiros no qual precismos tratar.
+O tratamento do array consiste em iterar  o array de resposta jogando seus dados dentro de uma variavel que recebera uma instancia da struct que sera jogado dentro da slice que armazenara o resultado final
+No for res.Next e aonde a ieteração do array de resposta acontece.
+O res.Scan e responsavelpor pegar o elemento da vez(Que e um registro do banco) e salvar em algum lugar. Nesse caso em product(Do tipo Product) que declaramos dentro do next.
+Dps so jogamos a varaivel com os dados daquela iteração dentro do slice coma função append
+E no final dps de organizar tudo retornamos o slice com todos os registros em ordem.
