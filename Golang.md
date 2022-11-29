@@ -570,14 +570,26 @@ $ go get -u github.com/go-sql-driver/mysql
 
 E apara conectar...
 ~~~go
-func ConnectDb(){
-  var err error
+db, err = sql.Open("mysql", "user:senha@tcp(host:porta)/banco")
+~~~
+Essa função retorna a conexão com o banco na variavel db e é com ela que faremos as outras coisas
 
-  db, err = sql.Open("mysql", "user:senha@tcp(host:porta)/banco")
-  if err == nil{
-    fmt.Println("CONEXÃO ESTABELICIDA COM SUCESSO")
-  }else{
-    panic(err)
-  }
+### Exec
+A função exec e utilizada quando não queremos nem um retorno sendo assim, com ela poedemos executar trechos de codigo sql
+~~~go
+_, err := db.Exec(fmt.Sprintf("INSERT INTO products (nome, descr, price, quant) VALUES ('%s', '%s', %f, %d)", name, descr, price, quant))
+~~~
+Atraves dessa função conseguimos fazer a maioria  das operações de um crud
+>A funão sprintf converte tudo em string e recebe dados com os especificadores de formato como no c
+
+### Query
+
+Para fazermos uma query e utilzar esses dados primeiro devemos criar uma struct que vai representar a estrutura da tabla tanto para query quando inserts
+~~~go
+type Product struct{
+  Id int
+  Nome, Desc string
+  Price float64
+  Quant int
 }
 ~~~
