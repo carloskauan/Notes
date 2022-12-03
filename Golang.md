@@ -625,3 +625,23 @@ O res.Scan e responsavelpor pegar o elemento da vez(Que e um registro do banco) 
 
 Dps so jogamos a varaivel com os dados daquela iteração dentro do slice coma função append
 E no final dps de organizar tudo retornamos o slice com todos os registros em ordem.
+
+### Prapare
+Para prepara o comando sql para execução usamos o metodo prepare
+~~~go
+    res, err := db.Prepare("update products set nome=?, descr=?, price=?, quant=? where id=?")
+  if err != nil{
+    fmt.Println("Erro ao ataualizar produtos", err)
+  }
+  _, err = res.Exec(nome, descr, price, quant, id)
+  if err != nil{
+    fmt.Println("Erro ao ataualizar produtos", err)
+  }
+~~~
+Assim preparamos o comando e dps executamos com exec substituindo o ? pelos dados
+
+### Close
+Para fecharmos a conexão com o banco de dados usamos o camando
+~~~go
+defer db.Close()
+~~~
