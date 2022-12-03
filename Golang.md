@@ -645,3 +645,12 @@ Para fecharmos a conexão com o banco de dados usamos o camando
 ~~~go
 defer db.Close()
 ~~~
+
+### Sql Rows
+Para settar umas var para receber dados do banco precisamos importar o database/sql e usar o tipo sql rows
+~~~go
+import "database/sql"
+
+var db *sql.Rows
+~~~
+
