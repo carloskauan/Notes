@@ -591,6 +591,7 @@ E na importação
 ~~~go
 {{template "_header"}}
 ~~~
+Assim importamos a partial
 
 ### range
 Para renderizar recursos automaticamaneto no html utilizamos a propriedade range
