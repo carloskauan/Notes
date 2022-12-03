@@ -547,6 +547,17 @@ req.FormValue("nome")
 ~~~
 Essa função pega um dado mandando pelo metodo post
 
+## Query params
+Para pegar o um valor que veio na url usamos
+~~~go
+id := req.URL.Query().Get("id")
+~~~
+Para montar uma url com query params
+~~~html
+<a href="/id?id=5"></a>
+~~~
+Assim passamos o id 5 como query param
+
 ## POST
 Quando precisamos pegar uma requisição do metodo post usamos
 ~~~go
