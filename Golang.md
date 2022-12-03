@@ -540,6 +540,25 @@ E para usarmos um dado passado pro front usamos
 ~~~
 >Sempre usando o as 2 {} e o .
 
+## Form value
+Quando precisamos pegar valores do formulario usamos req.FormValue() 
+~~~go
+req.FormValue("nome")
+~~~
+Essa função pega um dado mandando pelo metodo post
+
+## POST
+Quando precisamos pegar uma requisição do metodo post usamos
+~~~go
+func Update(res http.ResponseWriter, req *http.Request){
+  if req.Method == "POST"{
+  
+  }
+  http.Redirect(res, req, "/", 301)
+}
+~~~
+Nesse caso pegamos a requisição de metodo post e dps redirecionamos pra rota principal 
+
 ### range
 Para renderizar recursos automaticamaneto no html utilizamos a propriedade range
 ~~~html
