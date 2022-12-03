@@ -518,6 +518,36 @@ func home(w http.ResponseWrite,c http.Resquest){
 ~~~
 A função temp.ExecTemplate(w, "index", nil) e aonde usamos os templetes carregados da pasta na constante. E dentro dos parametros dessa função temos w que respresenta a resposta e "index" o nome do arquivo a ser carregado e.
 
+### Form value
+Quando precisamos pegar valores do formulario usamos req.FormValue() 
+~~~go
+req.FormValue("nome")
+~~~
+Essa função pega um dado mandando pelo metodo post
+
+### Query params
+Para pegar o um valor que veio na url usamos
+~~~go
+id := req.URL.Query().Get("id")
+~~~
+Para montar uma url com query params
+~~~html
+<a href="/id?id=5"></a>
+~~~
+Assim passamos o id 5 como query param
+
+### POST
+Quando precisamos pegar uma requisição do metodo post usamos
+~~~go
+func Update(res http.ResponseWriter, req *http.Request){
+  if req.Method == "POST"{
+  
+  }
+  http.Redirect(res, req, "/", 301)
+}
+~~~
+Nesse caso pegamos a requisição de metodo post e dps redirecionamos pra rota principal 
+
 ## View Engine
 O pacote html/teplate funciona como view engine podendo renderizar  as paginas html, epegar informações do  back e utilizar no front e usar trechos de codigo no html como ejs.
 Na função de resposta pra rquisição exectempalte o ultimo parametros utilizamos um dados para passar e ser usado no front
@@ -538,37 +568,29 @@ E para usarmos um dado passado pro front usamos
 ~~~html
 <h1>{{.Nome}}</h1>
 ~~~
->Sempre usando o as 2 {} e o .
+>Sempre usando o as 2 {} e o 
 
-## Form value
-Quando precisamos pegar valores do formulario usamos req.FormValue() 
-~~~go
-req.FormValue("nome")
-~~~
-Essa função pega um dado mandando pelo metodo post
-
-## Query params
-Para pegar o um valor que veio na url usamos
-~~~go
-id := req.URL.Query().Get("id")
-~~~
-Para montar uma url com query params
+### Partials
+Para partials usamos o seguinte esquema. O arquivo que recebera a partial tera o nome com _ na frente e seu conteudo da seguinte mareira
+>_header.html
 ~~~html
-<a href="/id?id=5"></a>
-~~~
-Assim passamos o id 5 como query param
+{{define "_header"}}
+<!DOCTYPE html>
+<html lang="en">
 
-## POST
-Quando precisamos pegar uma requisição do metodo post usamos
-~~~go
-func Update(res http.ResponseWriter, req *http.Request){
-  if req.Method == "POST"{
-  
-  }
-  http.Redirect(res, req, "/", 301)
-}
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Dark Store</title>
+</head>
+{{end}}
 ~~~
-Nesse caso pegamos a requisição de metodo post e dps redirecionamos pra rota principal 
+E na importação
+>index.html
+~~~go
+{{template "_header"}}
+~~~
 
 ### range
 Para renderizar recursos automaticamaneto no html utilizamos a propriedade range
