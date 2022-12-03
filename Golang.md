@@ -710,7 +710,7 @@ var db *sql.Rows
 ## MVC
 
 Para criarmos um projeto com padrão MVC precisamos da seguinte estrutura de pastas.
-database / Que sera responsavel pela conexão com banco de dados
-models / Que sera responsavel pelas opreações do banco de dados
-router / Que sera responsavel por carregar nossas rotas
-controller / Que sera responsavel por carregar a logica de cada rota
+>database / Que sera responsavel pela conexão com banco de dados
+>models / Que sera responsavel pelas opreações do banco de dados
+>router / Que sera responsavel por carregar nossas rotas
+>controller / Que sera responsavel por carregar a logica de cada rota
