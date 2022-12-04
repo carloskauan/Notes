@@ -10,3 +10,11 @@ json.NewEncoder(res).Encode(models.Personas)
 ~~~
 >Isso dentro de uma rota
 
+## Struct Json
+Para definirmos uma struct pra receber um json usamos
+~~~go
+type Personalites struct {
+  Nome string  `json:"nome"`
+  History string `json:"history"`
+}
+~~~
