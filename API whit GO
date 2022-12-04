@@ -1,1 +1,12 @@
+## Json
+Para respondermos uma rota com uma json usamos 
+~~~go
+import(
+  "encoding/json"
+  "net/http"
+)
+
+json.NewEncoder(res).Encode(models.Personas)
+~~~
+>Isso dentro de uma rota
 
