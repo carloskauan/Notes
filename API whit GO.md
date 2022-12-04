@@ -39,7 +39,7 @@ func HandleRequest() {
 ~~~
 Settamos o new router e nas handle func ao inves de http passa a instancia do mux e da instancia do server passamos o mux como parametro, Assim o proprio mux lidara com o roteamento
 
-## Pegando elementos da rota
+### Pegando elementos da rota
 Para passarmos um elemento pela rota usamos o seguinte ednpoint
 ~~~go
 rmux.HandleFunc("/api/personas/{id}", controllers.OnePersona)
@@ -57,3 +57,9 @@ func OnePersona(res http.ResponseWriter, req *http.Request){
 }
 ~~~
 Nesse caso eu estou instanciando o var do mux para poder pegar o id que veio na rota e aramazenar na variavel id, dps um range para comparar o id que foi pego no endpoint com o id de um outro lugar
+
+### Definindo metodo 
+Para definir um determinado metodo em uma rota passamos
+~~~go
+rmux.HandleFuc("/api/persona/{id}", constrollers.sla).Methods("Get")
+~~~
