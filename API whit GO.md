@@ -61,5 +61,5 @@ Nesse caso eu estou instanciando o var do mux para poder pegar o id que veio na 
 ### Definindo metodo 
 Para definir um determinado metodo em uma rota passamos
 ~~~go
-rmux.HandleFuc("/api/persona/{id}", constrollers.sla).Methods("Get")
+rmux.HandleFunc("/api/persona/{id}", constrollers.sla).Methods("Get")
 ~~~
