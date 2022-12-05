@@ -113,3 +113,22 @@ services:
       ports:
         -8080:8080
 ~~~
+### Subir imagem
+~~~sh
+sudo docker-compose up -d
+~~~
+
+### Derrubar imagem
+~~~sh
+sudo docker-compose down
+~~~
+
+### Resetar imagem
+~~~sh
+sudo docker-compose restart
+~~~
+
+### Ver containers ativos
+~~~sh
+sudo docker ps -a
+~~~
