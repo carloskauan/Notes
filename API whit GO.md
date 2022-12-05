@@ -63,3 +63,4 @@ Para definir um determinado metodo em uma rota passamos
 ~~~go
 rmux.HandleFunc("/api/persona/{id}", constrollers.sla).Methods("Get")
 ~~~
+ ### Docker
