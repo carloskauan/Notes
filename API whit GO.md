@@ -66,7 +66,7 @@ rmux.HandleFunc("/api/persona/{id}", constrollers.sla).Methods("Get")
 ## Docker
 ### Imagens
 #### POSTGRES
-~~~docker
+~~~yml
 version: '3'
 services:
   postgres:
@@ -91,7 +91,7 @@ services:
       - postgres
 ~~~
 #### MYSQL
-~~~go
+~~~yml
 version: "3"
 
 services:
