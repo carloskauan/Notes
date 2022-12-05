@@ -63,4 +63,53 @@ Para definir um determinado metodo em uma rota passamos
 ~~~go
 rmux.HandleFunc("/api/persona/{id}", constrollers.sla).Methods("Get")
 ~~~
- ### Docker
+## Docker
+### Imagens
+#### POSTGRES
+~~~docker
+version: '3'
+services:
+  postgres:
+    image: "postgres"
+    environment:
+      - POSTGRES_USER=user
+      - POSTGRES_PASSWORD=senha
+      - POSTGRES_DB=banco
+    ports:
+      - "5432:5432"
+    volumes:
+      - ./migration/docker-database-initial.sql:/docker-entrypoint-initdb.d/docker-database-initial.sql
+
+  pgadmin-compose:
+    image: dpage/pgadmin4
+    environment:
+      PGADMIN_DEFAULT_EMAIL: "email"
+      PGADMIN_DEFAULT_PASSWORD: "senha"
+    ports:
+      - "54321:80"
+    depends_on:
+      - postgres
+~~~
+#### MYSQL
+~~~go
+version: "3"
+
+services:
+  db:
+    container_name: mysql8
+    image: mysql:8.0
+    environment:
+      MYSQL_DATABASE: banco
+      MYSQL_USER: carlos
+      MYSQL_PASSWORD: 1597
+      MYSQL_ROOT_PASSWORD: 1597
+    ports:
+      - '3306:3306'
+    volumes:
+      - ./migration/docker-database-initial.sql:/docker-entrypoint-initdb.d/docker-database-initial.sql
+    adminer:
+      image: adminer
+      resert: always
+      ports:
+        -8080:8080
+~~~
