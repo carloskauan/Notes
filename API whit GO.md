@@ -135,6 +135,8 @@ sudo docker ps -a
 
 ## Gorm
 
+>Lembresse de criar uma struct para representar a tabela do banco para ser exportada como tipo
+
 ### Instalação
 Para importamos o gorm primeiro precisamos baixa-lo 
 ~~~
