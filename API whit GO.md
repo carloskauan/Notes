@@ -175,6 +175,7 @@ DB.First(&p, id)
 DB.Find(&p)
 ~~~
 >&p A variavel que ira armazenar os dados, ela deve ser do tipo da struct criado pra representar a table do banco
+
 First para pegar um elemento com o ID
 Find para pegar todos os elementos
 First para pegar um unico elemento
