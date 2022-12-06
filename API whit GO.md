@@ -8,6 +8,7 @@ import(
 json.NewEncoder(res).Encode(var)
 ~~~
 >Isso dentro de uma rota
+
 O metodo newEncoder server para codificarmos uma struct em em formato json, Ideal para responder uma requisição com dados
 
 ~~~go
