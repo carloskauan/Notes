@@ -3,14 +3,19 @@ Para respondermos uma rota com uma json usamos
 ~~~go
 import(
   "encoding/json"
-  "net/http"
 )
 
-json.NewEncoder(res).Encode(models.Personas)
+json.NewEncoder(res).Encode(var)
 ~~~
 >Isso dentro de uma rota
+O metodo newEncoder server para codificarmos uma struct em em formato json, Ideal para responder uma requisição com dados
 
-## Struct Json
+~~~go
+json.NewDecoder(req.Body).Decoder(&var)
+~~~
+Ja o metodo newDecoder server para decodificar o formato json e joga-lo dentro de uma ou struct
+
+## Struct Json Models
 Para definirmos uma struct pra receber um json usamos
 ~~~go
 type Personalites struct {
@@ -171,13 +176,43 @@ import(
  }
 ~~~
 
-### Pegar registros
+### Query all
+Encontrar todos os dados do banco
 ~~~go
-DB.First(&p, id)
+var p []Pessoas
 DB.Find(&p)
 ~~~
->&p A variavel que ira armazenar os dados, ela deve ser do tipo da struct criado pra representar a table do banco
+Priemiro declaramos uma slice do tipo model do banco, realizamos a query no banco e jogamos esses dados dentro desse array
+>Esse array recebera objetos
 
-First para pegar um elemento com o ID
+### Query one
+Encontrar um registro especifico
+~~~go
+var p Pessoas
+DB.First(&p, id)
+~~~
+Declaramos uma variavel para receber os dados e temos que passar o id dos registros que queremos
 
-Find para pegar todos os elementos
+### Create
+Criar um novo registro
+~~~go
+DB.Create(&p)
+~~~
+A vairevel p e do tipo model do banco ja com os dados preenchidos
+
+### Delete
+Deletar registros
+~~~go
+database.DB.Delete(&p, id)
+~~~
+Recebe o id do registro e uma variavel aonde sera jogando o registro que foi apagado, se os registros retornarem vazios significa que foi apagado com sucesso
+
+### Edit
+Editar registros
+~~~go
+DB.First(&editPersona, id)
+DB.Save(&editPersona)
+~~~
+Para editar primeiro precisamos pegar o registro que queremos guarda-lo numa var do tipo do model e dps passaramos essa var na Save para ser atualizada
+
+>DB deve ser uma instancia da conexão com o bancod e dados
