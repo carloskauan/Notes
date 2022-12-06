@@ -132,3 +132,15 @@ sudo docker-compose restart
 ~~~sh
 sudo docker ps -a
 ~~~
+
+## Gorm
+Para importamos o gorm primeiro precisamos baixa-lo 
+~~~
+go get -u gorm.io/gorm
+~~~
+E tambem precisamos do driver do banco que vc vai usar, postgres, mysql, sqlite, sql server
+Usamos go get com os seguintes modulos
+* gorm.io/driver/mysql
+* gorm.io/driver/postgres
+* gorm.io/driver/sqlite
+* gorm.io/driver/sqlserver
