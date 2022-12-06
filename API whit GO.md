@@ -134,6 +134,8 @@ sudo docker ps -a
 ~~~
 
 ## Gorm
+
+### Instalação
 Para importamos o gorm primeiro precisamos baixa-lo 
 ~~~
 go get -u gorm.io/gorm
@@ -144,3 +146,25 @@ Usamos go get com os seguintes modulos
 * gorm.io/driver/postgres
 * gorm.io/driver/sqlite
 * gorm.io/driver/sqlserver
+
+#### Conexão
+Uma conexão com banco postgres
+~~~go
+import(
+  "log"
+  "gorm.io/gorm"
+  "gorm.io/driver/postgres"
+)
+ var(
+   DB *gorm.DB
+   err error
+ )
+
+ func ConnectDB(){
+   connector := "host=localhost user=root password=root dbname=root port=5432 sslmode=disable"
+   DB, err = gorm.Open(postgres.Open(connector))
+   if err != nil{
+     log.Panic("Error ao conectar com o banco de dados")
+   }
+ }
+~~~
