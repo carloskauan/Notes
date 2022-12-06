@@ -139,6 +139,22 @@ sudo docker-compose restart
 sudo docker ps -a
 ~~~
 
+## Middlewares
+E muito comun precisarmos adicionar os mesmos procedimentos em rotas , e para evitarmos a replicação de codigos usamos middlewares.E usamaos da seguinte maneira
+~~~go
+func Name(next http.Handler) http.Handler{
+  return http.HandlerFunc(func(w http.ResponseWriter, r *http.Request){
+  
+      next.ServeHTTP(w, r)
+  })
+}
+~~~
+Criamos um arquivo e passamos a estrutura nessa forma dentro dessa função passamos o que queremos e retornamos o response writer e o request. E para utilizar esse middleware com gorilla mox settamos no arquivo de rotas
+~~~go
+rmux.Use(NameMiddleware)
+~~~
+Assim nosso roteador usa o middleware e sera aplicado a todas as rotas
+
 ## Gorm
 
 >Lembresse de criar uma struct para representar a tabela do banco para ser exportada como tipo
@@ -217,3 +233,19 @@ DB.Save(&editPersona)
 Para editar primeiro precisamos pegar o registro que queremos guarda-lo numa var do tipo do model e dps passaramos essa var na Save para ser atualizada
 
 >DB deve ser uma instancia da conexão com o bancod e dados
+
+## Cors
+Devido as politicas dos Cors , não e possivel acessar e consumir informações de diferentes dominios por padrão então temo que habilitar na hora da instancia do servidor. Para isso precisamos  baixar o pacote handdlers do gorilla com
+~~~
+got get github.com/gorilla/handlers
+~~~
+E para subir o servidor juntamente como mux usamos
+~~~go
+import(
+  "github.com/gorilla/mux"
+  "github.com/gorilla/handlers"
+)
+
+log.Fatal(http.ListenAndServe(":7070", handlers.CORS(handlers.AllowedOrigins([]string{"*"}))(rmux)))
+~~~
+Assim habilitamos o consumo de dados das outras aplicações
