@@ -9,7 +9,7 @@ json.NewEncoder(res).Encode(var)
 ~~~
 >Isso dentro de uma rota
 
-O metodo newEncoder server para codificarmos uma struct em em formato json, Ideal para responder uma requisição com dados
+O metodo newEncoder server para codificarmos uma struct em em formato json, Ideal para responder uma requisição com dados em json
 
 ~~~go
 json.NewDecoder(req.Body).Decoder(&var)
