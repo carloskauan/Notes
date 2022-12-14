@@ -251,6 +251,7 @@ Para execurtamos essa automigration temos que chamar
 DB.AutoMigrate(&Student{})
 ~~~
 Passando uma o ponteiro de uma instancia da struct. Assim uma table sera criada com o tipo daquela strcut
+>Auto migrations sempre tera que ser chamado no final do arquivo de conexão com o banco de dados
 
 ## Cors
 Devido as politicas dos Cors , não e possivel acessar e consumir informações de diferentes dominios por padrão então temo que habilitar na hora da instancia do servidor. Para isso precisamos  baixar o pacote handdlers do gorilla com
