@@ -249,3 +249,54 @@ import(
 log.Fatal(http.ListenAndServe(":7070", handlers.CORS(handlers.AllowedOrigins([]string{"*"}))(rmux)))
 ~~~
 Assim habilitamos o consumo de dados das outras aplicações
+
+# Gin
+### Intalação
+O Gin e um Framework back end, para baixarmos usamos o seguinte comando.
+~~~go
+go get -u github.com/gin-gonic/gin
+~~~
+E fazer as importação pra utilização nos arquivos
+~~~go
+import "github.com/gin-gonic/gin"
+~~~
+Para podermos usar o Gin primeiro temos que instancia-lo com
+~~~go
+app := gin.Default()
+~~~
+Assim temos a instancia padrão do Gin e podemos utilizar para criar rotas e subir o servidor.
+
+### Subir o servidor
+Como nas o utras linguagens a instancia do servidor deve ser a ultima linha.
+~~~go
+app.Run()
+~~~
+
+### Rotas
+Para criar rotas usamos
+~~~go
+app.GET("/rota", function Rota1(c *gin.Context))
+app.POST("/rota2", function Rota2(c *gin.Context))
+~~~
+O metodo da rota vira dps da instancia do gin, logo apos o endingpoint daquela rota e em seguida a função que lidará com aquela rota
+> Sempre passan o c *gin.Context como parametro da função
+
+### Query params
+Para pegar parametros pela urla usamos
+~~~go
+name := c.Params.ByName("nome do parametro")
+~~~
+
+### Resposta para uma requisição
+Para responder uma requisição com um arquivo json usa-se
+~~~go
+c.JSON(200, gin.H{
+  "Resp":"Conteudo"
+ })
+~~~
+Assim conseguimos mandar um arquivo json como resposta de uma requisição.
+> Quando recebemos uma query do banco, apenas passamos a variavel que recebeu os dados com o c.JSON
+
+~~~go
+c.JSON(200, varModel)
+~~~
