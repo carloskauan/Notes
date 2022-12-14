@@ -234,6 +234,24 @@ Para editar primeiro precisamos pegar o registro que queremos guarda-lo numa var
 
 >DB deve ser uma instancia da conexão com o bancod e dados
 
+## Auto migrations
+Para criarmos as tabelas no banco a partir do gorm usamos
+~~~go
+type Student struct{
+  gorm.Model
+  Name string `json:"name"`
+  CPF string `json:"cpf"`
+  RG string `json:"rg"`
+}
+~~~
+Primeiro temos que criar a struct com a correspondencia em json e a grom.Model, isso ira incluir os campos que o gorm necessita
+
+Para execurtamos essa automigration temos que chamar
+~~~go
+DB.AutoMigrate(&Student{})
+~~~
+Passando uma o ponteiro de uma instancia da struct. Assim uma table sera criada com o tipo daquela strcut
+
 ## Cors
 Devido as politicas dos Cors , não e possivel acessar e consumir informações de diferentes dominios por padrão então temo que habilitar na hora da instancia do servidor. Para isso precisamos  baixar o pacote handdlers do gorilla com
 ~~~
