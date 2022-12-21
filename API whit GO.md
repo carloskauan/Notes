@@ -319,3 +319,6 @@ Assim conseguimos mandar um arquivo json como resposta de uma requisição.
 ~~~go
 c.JSON(200, varModel)
 ~~~
+
+## Criptografia
+https://gowebexamples.com/password-hashing/
