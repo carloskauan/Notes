@@ -322,3 +322,6 @@ c.JSON(200, varModel)
 
 ## Criptografia
 https://gowebexamples.com/password-hashing/
+
+## Validação de email
+https://gosamples.dev/validate-email/
