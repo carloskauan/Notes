@@ -325,3 +325,10 @@ https://gowebexamples.com/password-hashing/
 
 ## Validação de email
 https://gosamples.dev/validate-email/
+
+## Envio de email com gomail
+~~~
+go get gopkg.in/mail.v2"
+~~~
+Codigo exemplo
+https://stackoverflow.com/questions/71675901/golang-send-mail-via-office365-smtp
