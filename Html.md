@@ -34,5 +34,7 @@ Deixa o texto em enfase com italico
 <a href="url" target="" rel=""></a>
 ~~~
 Href recebera a url do link
+
 Target A forma que o link sera aberto
+
 Rel a relação que o link tem com o documento 
