@@ -15,7 +15,7 @@ Definir o tipo de caracteres padrão utf8 do html
 <b></b>
 ~~~
 Deixar o texto em negrito
-<hr/>
+
 ~~~html
 <strong></strong>
 ~~~
@@ -61,4 +61,4 @@ Para adicionar um risco ao texto
 <u></u>
 ~~~
 Sublinhar o texto
-<hr/>
+
