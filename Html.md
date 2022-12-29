@@ -39,26 +39,3 @@ Href recebera a url do link
 Target A forma que o link sera aberto
 
 Rel a relação que o link tem com o documento 
-
-~~~html
-<del></del>
-~~~
-Para se referir a uma palavra errada
->Contem valor semantico
-
-~~~html
-<ins></ins>
-~~~
-Para se referir a uma palavra certo colocada no lugar de uma errada
->Contem valor sematico
-
-~~~html
-<s></s>
-~~~
-Para adicionar um risco ao texto
-
-~~~html
-<u></u>
-~~~
-Sublinhar o texto
-
