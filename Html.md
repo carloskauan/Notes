@@ -43,8 +43,10 @@ Rel a relação que o link tem com o documento
 <del></del>
 ~~~
 Para se referir a uma palavra errada
+>Contem valor semantico
 
 ~~~html
 <ins></ins>
 ~~~
 Para se referir a uma palavra certo colocada no lugar de uma errada
+>Contem valor sematico
