@@ -38,3 +38,13 @@ Href recebera a url do link
 Target A forma que o link sera aberto
 
 Rel a relação que o link tem com o documento 
+
+~~~html
+<del></del>
+~~~
+Para se referir a uma palavra errada
+
+~~~html
+<ins></ins>
+~~~
+Para se referir a uma palavra certo colocada no lugar de uma errada
