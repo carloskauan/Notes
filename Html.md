@@ -30,7 +30,7 @@ Deixa o texto em italico
 ~~~
 Deixa o texto em enfase com italico
 
-~~~hmtl
+~~~html
 <a href="url" target="" rel=""></a>
 ~~~
 Href recebera a url do link
