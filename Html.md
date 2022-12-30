@@ -19,3 +19,13 @@ Href recebera a url do link
 Target A forma que o link sera aberto
 
 Rel a relação que o link tem com o documento 
+
+~~~html
+<span></span>
+~~~
+Tag generica inline
+
+~~~html
+<div></div>
+~~~
+Tag generica in block
