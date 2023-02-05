@@ -1,4 +1,4 @@
-<h2>Compilação</h2>
+<h1>Compilação</h1>
 
 <p>Para compilar devemos usar o gcc com os seguintes comandos</p>
 <code>gcc -o nome_do_executavel nome_do_arquivo.c</code>
