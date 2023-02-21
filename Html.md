@@ -7,25 +7,8 @@
 Esta tag diz que o tipo de documento se html
 
 ~~~html
-<meta charset="utf-8">
+<meta charset="utf-8"> | Definir utf-8
+<a href="url" target="" rel=""></a> |
+<span></span> |
+<div></div> |
 ~~~
-Definir o tipo de caracteres padrão utf8 do html 
-
-~~~html
-<a href="url" target="" rel=""></a>
-~~~
-Href recebera a url do link
-
-Target A forma que o link sera aberto
-
-Rel a relação que o link tem com o documento 
-
-~~~html
-<span></span>
-~~~
-Tag generica inline
-
-~~~html
-<div></div>
-~~~
-Tag generica in block
