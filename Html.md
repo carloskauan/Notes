@@ -27,3 +27,11 @@ Tag      | Descrição
 </body>
 </html>
 ~~~
+
+## Tags de texto
+
+Tag      | Descrição
+:--------: | :------:
+<.h1><./h1>  | Paragrafo, vai de 1 a 6
+<.p><./p>| Pargrafo padr
+ | Sytanx da tag link
