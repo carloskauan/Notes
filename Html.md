@@ -35,3 +35,6 @@ Tag      | Descrição
 <.h1><./h1>  | Paragrafo, vai de 1 a 6
 <.p><./p>| Pargrafo padr
  | Sytanx da tag link
+
+### Display block
+ São tags que pegam a largura inteira da e quebra a linha, assim ocupando a linha inteira 
