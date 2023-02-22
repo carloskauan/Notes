@@ -7,3 +7,12 @@
   box-sizing: border-box;
 }
 ~~~
+
+## houver
+
+~~~css
+ .class:hover{
+  proprieadades
+ }
+~~~
+Para transformar um elemnto quando mouse passar por cima
