@@ -31,6 +31,10 @@ Tag      | Descrição
 <.hr/> | Linha horizontal 
 <.span> | Conteiner generico inline
 <.div> | Conteiner generico em bloco
+<.header> | Indica cabeçalho
+<.section> | Conteiner generico mais atual
+<.div> | Conteiner generico
+<.article> |
 
 
 ## Tags de texto
