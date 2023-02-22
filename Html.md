@@ -28,6 +28,9 @@ Tag      | Descrição
 <.a href="url" target="_blanc"> | Texto linkavel com a tag target que defini como a nova aba sera aberta
 <.img src="" alt="" width="" height=""> | Imagens 
 <.br/> | Quebra de linha
+<.hr/> | Linha horizontal 
+<.span> | Conteiner generico inline
+<.div> | Conteiner generico em bloco
 
 
 ## Tags de texto
@@ -48,6 +51,8 @@ Tag      | Descrição
 <.sup> | Eleva um texto ou plavra
 <.q cite=""> | Citação com ou sem link de referencia
 <.blockquote> | Bloco de citação 
+<.code> | Referencia um codigo
+<.pre> | Conserva a pre formatção de um texto
 
 ### Display block
  São tags que pegam a largura inteira da e quebra a linha, assim ocupando a linha inteira 
