@@ -58,5 +58,17 @@ Tag      | Descrição
 <.code> | Referencia um codigo
 <.pre> | Conserva a pre formatção de um texto
 
+## Listas ae tabelas
+
+Tag      | Descrição
+:--------: | :------:
+<.ul> | Lista não ordenada
+<.ol type="" start=""> | Lista Ordenada
+<.li> | Elemento da lista
+<.dl> | Lista descrita
+<.dt> | Topico de lista descrita
+<.dd> | Descrição de topico
+
+
 ### Display block
  São tags que pegam a largura inteira da e quebra a linha, assim ocupando a linha inteira 
