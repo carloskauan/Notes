@@ -27,6 +27,8 @@ Tag      | Descrição
 <.meta charset="utf-8"> | Definir utf-8 como caracteres padrão
 <.a href="url" target="_blanc"> | Texto linkavel com a tag target que defini como a nova aba sera aberta
 <.img src="" alt="" width="" height=""> | Imagens 
+<.br/> | Quebra de linha
+
 
 ## Tags de texto
 
@@ -38,6 +40,14 @@ Tag      | Descrição
 <.strong> | Negrito sem semantica
 <.em> | Enafase
 <.i> | Italico
+<.del> | Risca uma palavra indicando erro
+<.s> | Risca palavra sem semantica
+<.ins> | Sublinha uma palavra indicando correção de um del
+<.u> | Sublinha palavra sem semantica
+<.small> | Diminui o tamanho do texto
+<.sup> | Eleva um texto ou plavra
+<.q cite=""> | Citação com ou sem link de referencia
+<.blockquote> | Bloco de citação 
 
 ### Display block
  São tags que pegam a largura inteira da e quebra a linha, assim ocupando a linha inteira 
