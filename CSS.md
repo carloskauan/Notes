@@ -16,3 +16,12 @@
  }
 ~~~
 Para transformar um elemnto quando mouse passar por cima
+
+## Seletores
+#### .class1.class2
+
+Seleciona um elemto que tem duas classes ao mesmo tem
+
+#### .class1 > .calss2
+
+Seleciona somente filhas diretas de uma tag pai
