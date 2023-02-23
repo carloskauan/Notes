@@ -25,3 +25,12 @@ Seleciona um elemto que tem duas classes ao mesmo tem
 #### .class1 > .calss2
 
 Seleciona somente filhas diretas de uma tag pai
+
+#### .pai h1+p
+
+Seleciona diretamente somente o primeiro p apos o h1 dentro do pai
+
+#### .pai h1~p
+
+
+Seleciona diretamente TODOS os p apos o h1 dentro do pai
