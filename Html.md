@@ -69,6 +69,18 @@ Tag      | Descrição
 <.dt> | Topico de lista descrita
 <.dd> | Descrição de topico
 
+## Tabelas
+
+Tag      | Descrição
+:--------: | :------:
+<.caption> | Descrição
+<.table> | Tabela
+<.thead> | Cebeçalho da tabela
+<.tr> | Linhas
+<.th> | Titulo
+<.tbody> | Corpo da tabela
+<.td> | linha dentro do tbody
+<.tfoot> | Rodape
 
 ### Display block
  São tags que pegam a largura inteira da e quebra a linha, assim ocupando a linha inteira 
