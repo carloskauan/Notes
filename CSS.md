@@ -80,3 +80,7 @@ Usando a propriedade overflow:; w possivel controlar o comportamento do elemnto 
 ### display:float;
 
 Faz com que o elemento use so o necessario de espaço e permite que outro tipo de conteudo flutue ate sua proximidade
+
+### clear: ;
+
+Faz limpar o lado de um elemento 
