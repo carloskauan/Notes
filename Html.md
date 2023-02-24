@@ -84,3 +84,19 @@ Tag      | Descrição
 
 ### Display block
  São tags que pegam a largura inteira da e quebra a linha, assim ocupando a linha inteira 
+
+### Links de ancora
+
+Links de ancora são links que não apontam para endereços fora da pagina mas sim para elemento dentro da sua propria pagina
+
+~~~html 
+  <a href="#id"></a>
+~~~
+
+Precisamos definir um id ao elemento e tbm podemos definir uma propriedade no css para que dessa suavemente ate o elemento em questão
+
+~~~css
+html{
+  scroll-behavior: smooth;
+}
+~~~
