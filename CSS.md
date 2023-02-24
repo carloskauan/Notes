@@ -122,3 +122,10 @@ São medida relacionas as menores e maiores medidas de viewport
 ## Textos
 
 ttps://www.w3schools.com/css/css_text.asp
+
+## Posicionamento
+
+### Position
+
+Para position temos algumas flags como
+
