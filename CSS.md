@@ -106,3 +106,7 @@ html{
 ~~~
 
 Assim sempre que formos definir o tamnho de font size usamos rem ao inves de px.
+
+### vw e vh;
+
+São medidas baseadas no tamanho da viewport do navegador, vw viewport widith vh viewport height, eles vão de 0 a 100
