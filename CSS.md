@@ -34,3 +34,18 @@ Seleciona diretamente somente o primeiro p apos o h1 dentro do pai
 
 
 Seleciona diretamente TODOS os p apos o h1 dentro do pai
+
+### Pseudo classe
+
+Para mudarmos estados de algo com css usamos as pseudo classe  da seguinte forma
+
+~~~css
+.class{
+  transition: all 1s ease-in-out;
+}
+
+.class:hover{
+  background: red;
+}
+~~~
+Assim selecionamos uma classe e adicionos uma trasição que pegara 3 parametros, o primeiro defifnido como all diz que todas os eventos receberão o efeito de transição o segundo diz quanto tempo durará e o terceiro padrões da transição
