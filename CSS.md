@@ -64,3 +64,7 @@ Assim mudando a cor da tag p apos de um chack box marcada
 ### class:not(.classNegada)
 
 Pseudo classe de negaç aonde  aplica um estilo pra um grupo de elementos menos ao elemento selecionado dentro do not
+
+### class:nth-chield(3)
+
+Aplica o estilo pra um grupo de elemntos mas somento os elementos com indices descrito
