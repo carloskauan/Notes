@@ -72,3 +72,7 @@ Pseudo classe de negaç aonde  aplica um estilo pra um grupo de elementos menos 
 ### class:nth-chield(3)
 
 Aplica o estilo pra um grupo de elemntos mas somento os elementos com indices descrito
+
+### Controle de vazamento de elemento
+
+Usando a propriedade overflow:; w possivel controlar o comportamento do elemnto quando n
