@@ -49,3 +49,14 @@ Para mudarmos estados de algo com css usamos as pseudo classe  da seguinte forma
 }
 ~~~
 Assim selecionamos uma classe e adicionos uma trasição que pegara 3 parametros, o primeiro defifnido como all diz que todas os eventos receberão o efeito de transição o segundo diz quanto tempo durará e o terceiro padrões da transição
+
+### Pseudo classes
+
+E possivel muda um elemnto com base em outro utilizando pseudoclasse
+
+~~~css
+input:chacked + p{
+  color red
+}
+~~~
+Assim mudando a cor da tag p apos de um chack box marcada
