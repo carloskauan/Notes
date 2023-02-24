@@ -76,3 +76,7 @@ Aplica o estilo pra um grupo de elemntos mas somento os elementos com indices de
 ### Controle de vazamento de elemento
 
 Usando a propriedade overflow:; w possivel controlar o comportamento do elemnto quando n
+
+### display:float;
+
+Faz com que o elemento use so o necessario de espaço e permite que outro tipo de conteudo flutue ate sua proximidade
