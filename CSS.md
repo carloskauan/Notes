@@ -114,3 +114,11 @@ São medidas baseadas no tamanho da viewport do navegador, vw viewport widith vh
 ### %
 
 Uma medida besada no tamanho da tag pai
+
+### vmim e vmax
+
+São medida relacionas as menores e maiores medidas de viewport 
+
+## Textos
+
+ttps://www.w3schools.com/css/css_text.asp
