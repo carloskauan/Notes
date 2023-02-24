@@ -84,3 +84,25 @@ Faz com que o elemento use so o necessario de espaço e permite que outro tipo d
 ### clear: ;
 
 Faz limpar o lado de um elemento 
+
+## Unidades de medias
+
+### em
+
+Faz com que o lemento se comporte baseando em um elemento pai mais proximo dele
+
+Aonde quando temos por exemplo um classe pai com 50px de tamanho usamos 1em na classse filha para saber quantas a filha tem o tamanho do pai
+
+### rem
+
+A medida rem e bem partecida com o o em , mas ele se baseia de no tamanho da classe root do documento , no caso o html
+
+Para fazermos o rem ter a mesma medida que o px temos que usar aseguinte configuração
+
+~~~css
+html{
+  font-size: 62.5;
+}
+~~~
+
+Assim sempre que formos definir o tamnho de font size usamos rem ao inves de px.
