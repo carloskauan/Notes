@@ -144,3 +144,5 @@ absolute | Se comporta como se tivesse subido de camada
 z-index: 1; | Quando temos mais de um elemento em absolute conseguimos controlar a camada em que ele se encontra
 fixed | Funciona da mesma forma que o absolute mas fixa na tela, se a tela rolar o elementoa companhará
 sticky | Em uma lista por exemplo com overflow auto ele pega um elemente e mantem fixo na tela e subtitui por outro sticky quando encontrar
+
+### Media query e brakpoints
