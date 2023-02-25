@@ -127,5 +127,7 @@ ttps://www.w3schools.com/css/css_text.asp
 
 ### Position
 
-Para position temos algumas flags como
+Para mudar e definir posicionamento de algun elementos usamos a propriedade position no css
+
+
 
