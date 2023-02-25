@@ -129,5 +129,16 @@ ttps://www.w3schools.com/css/css_text.asp
 
 Para mudar e definir posicionamento de algun elementos usamos a propriedade position no css
 
+EX:
+~~~css
+.class{
+  position: static;
+}
+~~~ 
 
-
+Propriedade      | Descrição
+:--------: | :------:
+static | Deixa o elemento estatico em uma posiçõa, assim não podendo mudar
+relative | Posição relativa aos elementos ao redor
+absolute | Se comporta como se tivesse subido de camada
+x-index: 1; | Quando temos mais de um elemento em absolute conseguimos controlar a camada em que ele se encontra
