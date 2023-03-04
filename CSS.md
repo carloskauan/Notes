@@ -146,3 +146,14 @@ fixed | Funciona da mesma forma que o absolute mas fixa na tela, se a tela rolar
 sticky | Em uma lista por exemplo com overflow auto ele pega um elemente e mantem fixo na tela e subtitui por outro sticky quando encontrar
 
 ### Media query e brakpoints
+
+Para criar breakpoints para nos utilizamos um conjunto de css apenas quando um break pointe for verdadeiro, assim o css daquele break pointe sobrescreverá o css normal
+
+~~~css
+@media (max-width: 320px)and (min-width){
+  .grid .col{
+    background-color: red;
+  }
+}
+~~~
+Tambem se possivel usar somente um break pointe e tbm mais de um com o and 
