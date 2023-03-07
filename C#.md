@@ -115,3 +115,6 @@ object altura = 1.85f;
 object idade = 18;
 object gender = 'M';
 ~~~
+
+#### MinValue MaxValue
+
