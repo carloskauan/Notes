@@ -103,3 +103,15 @@ nome = "Kleber";
 O que acontece e que quando vc atribui um novo valor a essa var uma nova string e criada do zero.
 
 >Strings são declaradas entre aspas duplas ""
+
+#### object
+
+São tipos genericos que podem armazenar todos os tipos de informação;
+
+
+~~~cs
+object nome = "João";
+object altura = 1.85f;
+object idade = 18;
+object gender = 'M';
+~~~
