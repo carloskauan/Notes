@@ -55,6 +55,7 @@ Assim para a declaração de uma variavel int poderiamos ter
 sbyte x = 100;
 SByte y = 200;
 ~~~
+>Nuemros declarados como long por converão utilizamos o caractere "L" no final para indicar um numero longo
 
 A varievel x sendo umma declaração com tipo basico do c# e a variavel y sendo uma declaração com o tipo basico fornecido pelo .net framewrok, sendo assim so possivel sua utilizção com sua importação
 
@@ -67,4 +68,4 @@ sbyte x = 127;
 x++;
 ~~~
 
-O tipo s byte tem o renge de -128 ate 127, fazendo a seguinte operação o range e estrapola, n C# quando isso acontece o valor definido apos a operação e o valor do limite oposto. Isso e uma caracteristica da representação dos numeros do C# chamada complemento a dois. Assim o valor da variavel x ao final da execuç
+O tipo s byte tem o renge de -128 ate 127, fazendo a seguinte operação o range e estrapola, n C# quando isso acontece o valor definido apos a operação e o valor do limite oposto. Isso e uma caracteristica da representação dos numeros do C# chamada complemento a dois. Assim o valor da variavel x ao final da execução seria -128
