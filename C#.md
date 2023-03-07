@@ -74,6 +74,6 @@ O tipo s byte tem o renge de -128 ate 127, fazendo a seguinte operação o range
 
 Os tipos char recebem apenas caracteres. Os caracteres devem estar e aspas simples , tambem e possivel escerver um caractere com seu codigo unicode assim sendo necessario um \u antes do seu codigo
 ~~~cs
-char x = 'A'
-char y = '\u0041'
+char x = 'A';
+char y = '\u0041';
 ~~~
