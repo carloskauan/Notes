@@ -118,3 +118,12 @@ object gender = 'M';
 
 #### MinValue MaxValue
 
+Todos os tipos numericos receben uma proprieadade chamada MaxValue e MinValue, que retornara o maior e o menor valor que podera ser armazenado.
+
+~~~cs
+int n1 = int.MinValue;
+int n2 = int.MaxValue;
+sbyte n3 = sbyte.MaxValue;
+double n4 = double.MaxValue;
+long n5 = long.MinValue;
+~~~
