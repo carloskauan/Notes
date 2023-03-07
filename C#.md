@@ -77,3 +77,10 @@ Os tipos char recebem apenas caracteres. Os caracteres devem estar e aspas simpl
 char x = 'A';
 char y = '\u0041';
 ~~~
+
+#### float
+
+O tipo float deve conter o carcter f no final do numero, pois sem o carctere o compilador vai entender que o numero e tipo double
+~~~cs
+float peso = 99.50f;
+~~~
