@@ -84,3 +84,22 @@ O tipo float deve conter o carcter f no final do numero, pois sem o carctere o c
 ~~~cs
 float peso = 99.50f;
 ~~~
+
+#### string
+
+Strings não são um tipo basico de dados
+
+![image](https://user-images.githubusercontent.com/89313841/223514543-28fbb026-e66d-43eb-b777-fd39eca6321d.png)
+
+Uma string e imutavel, ou seja uma vez criada não poder ser mudada.
+
+Mas mesmo assim e possivel mudar o valor de uma variavel
+
+~~~cs
+string nome = "Jão Kleber";
+nome = "Kleber";
+~~~
+
+O que acontece e que quando vc atribui um novo valor a essa var uma nova string e criada do zero.
+
+>Strings são declaradas entre aspas duplas ""
