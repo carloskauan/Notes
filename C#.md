@@ -182,3 +182,48 @@ System.Console.WriteLine($"{nome} tem {idade} anos e tem saldo igual a {saldo:F2
 ~~~
 
 Usando o $"" assim podemos abrir uma chaves e passar o valor dentro da propria string;
+
+## Conversão de tipos numericos
+
+#### Implicita
+A convsersão implicita acontece quando queremos converter um tipo menor(em bytes) para um maior, assim sendo possivel a converção implicita.
+
+Ex:
+~~~cs
+float x;
+double y;
+
+x = 123.34f
+y = x;
+~~~
+
+Assim o tipo float tendo o tamanho de 4 bytes e o double 8 bytes, assim cabendo perfeitamente e a converção implicita acontecendo
+
+#### Casting
+
+Quando não e possivel fazer uma converção implicita usamos o casting, e quando queremos converter um tipo maior(em bytes) para um tipo menor, usamos o seguinte artificio.
+
+Ex:
+~~~cs
+float x;
+double y;
+
+y = 34234.5645645654;
+a = (float)y;
+~~~
+
+Assim o valor que era double agora sera float
+
+>Realizando este tipo de casting, o valor sera sujeito a perda de de valores.
+
+#### Divisão de inteiros
+
+Para podermos dividir inteiros temos que realizar o casting da operação pois o compiladaor podera entender que o resultado da operação
+
+Ex:
+~~~cs
+float x = 5;
+int y = 2;
+
+double z = (double) x/y;
+~~~
