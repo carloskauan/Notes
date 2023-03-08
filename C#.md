@@ -157,3 +157,28 @@ E tbm devemos aplicar a formatação da exibição da seguinte maneira
 float saldo = 123.3214334f;
 Console.Writeline(saldo.ToString("F2", CultureInfo.InvariantCulture));
 ~~~
+## Templete string
+
+Para adicionarmos valores e variaveis a uma sitring usamos dois metodos
+
+#### Interpolação
+~~~cs
+int idade = 19;
+double saldo = 182.34342;
+string nome = "Carlos Kauan";
+
+System.Console.WriteLine("{0} tem {1} anos e tem saldo igual a {2:F2} reais", nome, idade, saldo);
+~~~
+Assim adiocionando fora da string os valores em suas respectivas posições.
+
+
+#### Placeholders
+~~~cs
+int idade = 19;
+double saldo = 182.34342;
+string nome = "Carlos Kauan";
+
+System.Console.WriteLine($"{nome} tem {idade} anos e tem saldo igual a {saldo:F2} reais");
+~~~
+
+Usando o $"" assim podemos abrir uma chaves e passar o valor dentro da propria string;
