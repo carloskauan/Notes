@@ -148,7 +148,7 @@ Assim sera formatado com o numero de duas casas
 Para formatarmos um numero float com o . ao inves de  , temos que fazer uso do namespace System.Gloabalization
 
 ~~~cs
-useing System.Globalization;
+using System.Globalization;
 ~~~
 
 E tbm devemos aplicar a formatação da exibição da seguinte maneira
