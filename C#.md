@@ -127,3 +127,9 @@ sbyte n3 = sbyte.MaxValue;
 double n4 = double.MaxValue;
 long n5 = long.MinValue;
 ~~~
+
+## Comandos de saida
+
+#### Write r Writeline
+
+Write e Writeline severvem para exibir informações so que o writeline quebra a linha e o write n
