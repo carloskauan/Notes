@@ -231,13 +231,13 @@ double z = (double) x/y;
 ## Potencia e raiz quadrada
 
 #### Potencia
-~~~
+~~~cs
 double y = 4.0;
 double potencia = Math.Pow(x, 2);
 ~~~
 
 #### Raiz
-~~~
+~~~cs
 double y = 4.0;
 double potencia = Math.Sqrt(x);
 ~~~
