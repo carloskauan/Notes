@@ -130,6 +130,30 @@ long n5 = long.MinValue;
 
 ## Comandos de saida
 
-#### Write r Writeline
+### Write r Writeline
 
-Write e Writeline severvem para exibir informações so que o writeline quebra a linha e o write n
+Write e Writeline severvem para exibir informações so que o writeline quebra a linha e o write não
+
+No caso de um numero float, podemos formatar a quantidade de casas exibidas assim
+
+~~~cs
+float saldo = 12.5675f;
+Console.Writeline(saldo.ToString("F2"));
+~~~
+
+Assim sera formatado com o numero de duas casas
+
+### Formatar flloat com .
+
+Para formatarmos um numero float com o . ao inves de  , temos que fazer uso do namespace System.Gloabalization
+
+~~~cs
+useing System.Globalization;
+~~~
+
+E tbm devemos aplicar a formatação da exibição da seguinte maneira
+
+~~~cs
+float saldo = 123.3214334f;
+Console.Writeline(saldo.ToString("F2", CultureInfo.InvariantCulture));
+~~~
