@@ -241,3 +241,16 @@ double potencia = Math.Pow(x, 2);
 double y = 4.0;
 double potencia = Math.Sqrt(x);
 ~~~
+
+## Console.ReadeLine()
+Comando para entrada de dados padrão, retorna uma string
+
+## var.Split(' ');
+Transforma um array em um vetor
+
+Ex:
+~~~
+string a = "Maria Jose";
+string[] vet = a.Split(' ');
+~~~
+Assim a var maria sera dividida e separada por espaço, definido dentro do split eo vetor tera Maria na posição 0 e Jose na posição 1
