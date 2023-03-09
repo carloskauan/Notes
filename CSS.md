@@ -157,3 +157,7 @@ Para criar breakpoints para nos utilizamos um conjunto de css apenas quando um b
 }
 ~~~
 Tambem se possivel usar somente um break pointe e tbm mais de um com o and 
+
+## Flex-wrap
+
+Fazer o elemento quebrar a linha se não tiver espaço
