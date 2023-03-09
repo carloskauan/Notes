@@ -245,12 +245,37 @@ double potencia = Math.Sqrt(x);
 ## Console.ReadeLine()
 Comando para entrada de dados padrão, retorna uma string
 
+### Armazenar diferentes tipos de dados
+
+O readeline so le valores inteiros, e pra armazenar esses valores em variaveis do seu tipo temos que ralizar um parse
+
+~~~cs
+int x = int.Parse(Console.ReadLine());
+~~~
+Convertendo o valor lido em string para int, o mesmo se aplica para outros tipos
+
+### Armazenamento de float
+
+Para armazenar o numero float corretamente precisamos definir sua leitura como ponto
+~~~cs
+double f = float.Parse(Console.ReadLine(), CultureInfo.InvariantCulture);
+~~~
+
+## type.parse()
+Uma forma de converter string para outros tipos, e valido para todos os tipo
+~~~cs
+int i = int.Parse(Console.ReadLine());
+char o = char.Parse(Console.ReadLine());
+sbyte e = sbyte.Parse(Console.ReadLine());
+~~~
+
 ## var.Split(' ');
 Transforma um array em um vetor
 
 Ex:
-~~~
+~~~cs
 string a = "Maria Jose";
 string[] vet = a.Split(' ');
 ~~~
 Assim a var maria sera dividida e separada por espaço, definido dentro do split eo vetor tera Maria na posição 0 e Jose na posição 1
+
