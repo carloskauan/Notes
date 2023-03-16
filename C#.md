@@ -308,4 +308,4 @@ O c# aloca variaveis e objetos em memorias diferentes chamadas stack e heap
 Local da memoria aonde e guardado variaveis estaticas
 
 #### Heap
-Local da memoria aonde as coisas são alocadas dinamicamente
+Local da memoria aonde as coisas são alocadas dinamicamente, aonde o nome da variavel da instancia na realidade e um ponteiro que aponta pro local da memoria aonde esta o objeto instanciado
