@@ -291,4 +291,21 @@ namespace Name{
 }
 ~~~
 
-Aonde public define se o atributo ser
+Aonde public define se o atributo sera ou não visivel fora da classe
+
+## Inatancia de uma classe
+Para instanciarmos uma classe usamos
+
+~~~cs
+Carro x = new Carro();
+~~~
+As classes tbm funcionam como tipos
+
+### Alocação de memoria de classes
+O c# aloca variaveis e objetos em memorias diferentes chamadas stack e heap
+
+#### Stack
+Local da memoria aonde e guardado variaveis estaticas
+
+#### Heap
+Local da memoria aonde as coisas são alocadas dinamicamente
