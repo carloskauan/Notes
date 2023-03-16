@@ -280,4 +280,15 @@ string[] vet = a.Split(' ');
 Assim a var maria sera dividida e separada por espaço, definido dentro do split eo vetor tera Maria na posição 0 e Jose na posição 1
 
 ### Funções
+Para de finir uma classe devemos fazer o seguinte
 
+~~~cs
+namespace Name{
+  class Carro{
+    public string Nome;
+    public string Modelo;
+  }
+}
+~~~
+
+Aonde public define se o atributo ser
