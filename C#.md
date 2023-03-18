@@ -280,6 +280,12 @@ string[] vet = a.Split(' ');
 Assim a var maria sera dividida e separada por espaço, definido dentro do split eo vetor tera Maria na posição 0 e Jose na posição 1
 
 ### Funções
+Para cirar funções usamos 
+~~~cs
+static void Nome(){}
+~~~
+
+## Inatancia de uma classe
 Para de finir uma classe devemos fazer o seguinte
 
 ~~~cs
@@ -293,7 +299,6 @@ namespace Name{
 
 Aonde public define se o atributo sera ou não visivel fora da classe
 
-## Inatancia de uma classe
 Para instanciarmos uma classe usamos
 
 ~~~cs
