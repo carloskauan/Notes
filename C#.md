@@ -330,3 +330,10 @@ Usamos a palavra override no metodo para sobrescrever o metodo ja existente dent
 São menbros quefazem sentido independentimente de de instancia de classes
 
 Uma classe que possui somente menbros estaticos não pode ser instanciada
+
+para criar uma classe com menbros estaticos usamos o chamada
+
+~~~cs
+public static int Div(int a, int b){}
+~~~
+>Isso dentro de uma classe, o mesmo serve para variaveis
