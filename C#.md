@@ -320,3 +320,8 @@ public override string ToString(){
 Usamos a palavra override no metodo para sobrescrever o metodo ja existente dentro da super class object
 
 >Toda classe em C# euma subclasse de object
+
+### Membros estaticos
+São menbros quefazem sentido independentimente de de instancia de classes
+
+Uma classe que possui somente menbros estaticos não pode ser instanciada
