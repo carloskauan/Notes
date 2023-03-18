@@ -309,3 +309,14 @@ Local da memoria aonde e guardado variaveis estaticas
 
 #### Heap
 Local da memoria aonde as coisas são alocadas dinamicamente, aonde o nome da variavel da instancia na realidade e um ponteiro que aponta pro local da memoria aonde esta o objeto instanciado
+#### Metodo ToString
+Para definirmos od metodo tostring devemos utilizar
+~~~cs
+public override string ToString(){
+   return "Slaa"
+}
+~~~
+
+Usamos a palavra override no metodo para sobrescrever o metodo ja existente dentro da super class object
+
+>Toda classe em C# euma subclasse de object
