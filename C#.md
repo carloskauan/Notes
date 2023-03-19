@@ -353,3 +353,27 @@ class Carro{
 Assim definimos um metodo construtor com parametros.
 
 ### Sobrecarga - override
+Podemos definir mais de um metodo consctrutor mdaundo aepenas a quantide de parametros
+
+~~~cs
+public Carro(string nome, int ano, float preço){
+  
+}
+
+public Carro(string nome, int ano){
+
+}
+
+public Carro(){
+
+}
+~~~
+Assim quando o metodo e instanciado o que sera acionado sera somente o que tem a quantidade de parametros passado apenas
+
+### This
+
+A palavra this serve tanto para referenciar a instancia do proprio obejeto quanto para aproveitar metodos construtores
+
+~~~cs
+
+~~~
