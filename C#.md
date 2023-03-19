@@ -285,6 +285,7 @@ Para cirar funções usamos
 static void Nome(){}
 ~~~
 
+# Orientação a obejeto
 ## Inatancia de uma classe
 Para de finir uma classe devemos fazer o seguinte
 
@@ -337,3 +338,18 @@ para criar uma classe com menbros estaticos usamos o chamada
 public static int Div(int a, int b){}
 ~~~
 >Isso dentro de uma classe, o mesmo serve para variaveis
+
+### Metodo Construtor
+
+Para definirmos um metedo construtor pra uma classe devemos definir um metododo com o mesmo nome da classe
+~~~cs 
+class Carro{
+  public string Nome;
+  public Carro(string nome){
+    Nome = nome;
+  }
+}
+~~~
+Assim definimos um metodo construtor com parametros.
+
+### Sobrecarga - override
