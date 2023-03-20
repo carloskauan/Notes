@@ -375,5 +375,14 @@ Assim quando o metodo e instanciado o que sera acionado sera somente o que tem a
 A palavra this serve tanto para referenciar a instancia do proprio obejeto quanto para aproveitar metodos construtores
 
 ~~~cs
+public Carro(string nome,float preço){
+  Nome = nome;
+  Preco = preco;
+  
+}
 
+public Carro(string nome, float preço, int ano):this(nome, ano){
+  Ano = ano;
+}
 ~~~
+Assim os atributos nome e preco serão definido pelo primeiro construtor que sera aproveitado pelo segundo, e o atributo ano sera definido pelo segundo.
