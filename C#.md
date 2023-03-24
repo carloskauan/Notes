@@ -396,3 +396,8 @@ Para definirmos uma proprieadade usamos
     set{}
   }
 ~~~
+E tbm existe tbm como criar auto properties, propriedades que se auto inplementam.
+
+~~~cs
+public string Nome{get; private set;}
+~~~
