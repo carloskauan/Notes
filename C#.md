@@ -401,3 +401,19 @@ E tbm existe tbm como criar auto properties, propriedades que se auto inplementa
 ~~~cs
 public string Nome{get; private set;}
 ~~~
+
+## Classes são tipos de referencia
+
+Variaveis cujos os tipos são classes não devem ser entendidas como caixas, mas sim ponteiros, que indicam um lugar na memoria.
+
+![image](https://user-images.githubusercontent.com/89313841/234627399-2a6cbb3d-bd66-412d-8b38-b5f93856058f.png)
+
+### Valor null
+
+Tipos de refencia aceitam o valor "null" , que indica que a variavel aponta pra ninguem.
+
+### Structs
+
+Structs são caixas que armazenam os valores e não ponteiros
+
+![image](https://user-images.githubusercontent.com/89313841/234629230-2acb048c-c49a-451a-a5cb-3b04a9a88dcf.png)
