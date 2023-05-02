@@ -418,4 +418,6 @@ Structs são caixas que armazenam os valores e não ponteiros
 
 ![image](https://user-images.githubusercontent.com/89313841/234629230-2acb048c-c49a-451a-a5cb-3b04a9a88dcf.png)
 
+Os tipos primarios de dados são structs
 
+Tambem podemos criar nosso proprios tipos structs
