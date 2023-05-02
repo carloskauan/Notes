@@ -445,3 +445,5 @@ Point mp = new Point();
 
 System.Console.WriteLine(mp);
 ~~~
+
+Os tipos scrutcts São mais performaticos.
