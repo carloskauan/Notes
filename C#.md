@@ -421,3 +421,27 @@ Structs são caixas que armazenam os valores e não ponteiros
 Os tipos primarios de dados são structs
 
 Tambem podemos criar nosso proprios tipos structs
+
+~~~cs
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Threading.Tasks;
+
+namespace Structs{
+    struct Point{
+        public double x, y;
+        public override string ToString(){
+            return $"({x},{y})";
+        }
+    }
+}
+~~~
+
+E para instanciarmos essa struct e usarmos ela , e feito o mesmo processo das classes normais
+
+~~~cs
+Point mp = new Point();
+
+System.Console.WriteLine(mp);
+~~~
