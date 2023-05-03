@@ -451,3 +451,7 @@ Os tipos scrutcts São mais performaticos.
 ### Scruct vs Classe
 
 ![image](https://user-images.githubusercontent.com/89313841/235808600-f37f3a8b-6d37-4f59-ac8d-9d9f12268727.png)
+
+### Nullable
+
+Recurso utilizado para permitir valores nulos em variaveis do tipo valor
