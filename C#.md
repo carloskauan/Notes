@@ -455,3 +455,9 @@ Os tipos scrutcts São mais performaticos.
 ### Nullable
 
 Recurso utilizado para permitir valores nulos em variaveis do tipo valor
+
+~~~cs
+string? nome = null;
+~~~
+
+Assim a variavel nome do tipo string pode tbm receber valores nulos
