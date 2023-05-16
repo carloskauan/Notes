@@ -461,3 +461,19 @@ string? nome = null;
 ~~~
 
 Assim a variavel nome do tipo string pode tbm receber valores nulos
+
+O valor nullable tem 3 operações basicas
+
+#### x.GetValueOrDefault()
+
+Uma operação aonde se em caso da falta do valor de uma valor pra variavel e retornado o valor padrão do tipo basico da variavel, assim existe um retorno ao inves de retornar null
+
+~~~
+int? x = null;
+
+Console.WriteLine(x.GetValueOrDefault);
+~~~
+
+Aonde o retorno do console write seria o numero 0, pois e o valor padrão do tipo inteiro
+
+
