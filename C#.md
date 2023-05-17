@@ -476,4 +476,27 @@ Console.WriteLine(x.GetValueOrDefault);
 
 Aonde o retorno do console write seria o numero 0, pois e o valor padrão do tipo inteiro
 
+#### x.Value
 
+Operação aonde e retornado o valor dentro de uma variavel do tipo nullable, se caso dentro dessa variavel tiver null, e retornado um erro pois esse metodo so e possivel ser usado em var nullable com valores
+
+~~~
+double? x = 1.5;
+
+System.Console.WriteLine(x.Value);
+~~~
+
+O valor exibido seria de 1.5 pois
+
+#### Operador de coalescência nula
+
+Quando queremos atribuir a uma variavel nullable outra de valor normal e queremos fazer uma atribuição com uma verificação
+
+~~~
+double? x = null;
+double y =  x ?? 0.0;
+
+System.Console.WriteLine(y);
+~~~
+
+Aonde a saida do cw seria 0.0, pois caso x seja null, o valor atribuido a variavel y e o de 0.0, e caso x tenha um valos !null, o valor sera atrbuido a y.
