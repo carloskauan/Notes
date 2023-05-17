@@ -506,3 +506,11 @@ System.Console.WriteLine(y);
 ~~~
 
 Aonde a saida do cw seria 0.0, pois caso x seja null, o valor atribuido a variavel y e o de 0.0, e caso x tenha um valos !null, o valor sera atrbuido a y.
+
+##Vetores
+
+Para criarmos um vetor usamos
+
+~~~
+string[] x = new string[n]
+~~~
