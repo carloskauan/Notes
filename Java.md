@@ -19,4 +19,4 @@ public class myProgram{
 }
 ~~~
 
->> O nome da classe deve ter o mesmo nome do arquivo
+> O nome da classe deve ter o mesmo nome do arquivo
