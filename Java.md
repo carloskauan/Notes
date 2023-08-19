@@ -31,3 +31,14 @@ javac myProgram.cs
 > Lembre-se de esta no diretorio aonde seu arquivo esta salvo
 
 Este comando gera uma arquivo .class com o mesmo nome do seu arquivo .java, esse e seu arquivo em bytecode usado pela jvm para a execução do que foi programado no seu arquivo .java
+
+E para executar o programa que ja esta em formato bytecode(.class) usamos
+~~~sh
+java myProgram
+~~~
+
+Tambem podemos visulizar o conteudo de um arquivo .class usando o comando 
+~~~sh
+javap -c myProgram.class
+~~~
+> Devemos nos certificar que o caminho do java esteja devidamento adicionado ao path
