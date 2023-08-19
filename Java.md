@@ -8,3 +8,15 @@ Java utiliza o conceito de maquina virtual, aonde existe, entre o sistema operac
 
 
 Dessa forma seu programa apos desenvolvido pode ser executado em qualquer sistema operacional
+
+### Estrutura basica
+
+~~~java
+public class myProgram{
+  static void main(String[] args){
+    System.out.println("Hello World");
+  }
+}
+~~~
+
+>> O nome da classe deve ter o mesmo nome do arquivo
