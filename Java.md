@@ -6,4 +6,5 @@ Java utiliza o conceito de maquina virtual, aonde existe, entre o sistema operac
 
 ![modcomp](https://github.com/carloskauan/Notes/assets/89313841/270da8b3-877b-42fb-adc0-34cb01a5ca05)
 
+
 Dessa forma seu programa apos desenvolvido pode ser executado em qualquer sistema operacional
