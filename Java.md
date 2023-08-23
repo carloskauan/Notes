@@ -42,3 +42,13 @@ Tambem podemos visulizar o conteudo de um arquivo .class usando o comando
 javap -c myProgram.class
 ~~~
 > Devemos nos certificar que o caminho do java esteja devidamento adicionado ao path
+
+### Variaveis
+
+Toda variavel em java necessita da sua declaração de tipo que não pode ser muadado depois de declarado
+
+~~~java
+int idade;
+~~~
+
+Assim a varivel e iniciada sem nem um valor
