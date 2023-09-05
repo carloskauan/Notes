@@ -52,3 +52,61 @@ int idade;
 ~~~
 
 Assim a varivel e iniciada sem nem um valor
+
+### Orientação a objeto
+
+#### Private
+
+  Atributos de uma classe que so podem ser acessados dentro da classe da classe de origem
+
+#### Public
+
+  Atributos que podem ser acessados e visiveis dentro de fora da classe de origem
+
+#### Protected
+
+  Atributos que pode ser acessados fora da classe de origem e mas não são visiveis fora da classe de origem
+
+#### Implemnetação
+
+Classe Pessoa com atributo privado e protected, com metodos gett e sett para manipulação dos atributos privados
+~~~java
+public class Pessoa {
+  protected String nome;
+  private int idade;
+
+  public String getNome(){
+    return nome;
+  }
+
+  public void setNome(String nome){
+    this.nome = nome;
+  }
+
+  public int getIdade(){
+    return idade;
+  }
+
+  public void setIdade(int idade){
+    this.idade = idade;
+  }
+
+  public void showDados(){
+    System.out.println(this.nome+"\t"+this.idade);
+  }
+}
+~~~~
+
+Classe que implemnte a classe pessoa e manipula e atrbui seus metodos
+~~~java
+public class App {
+    public static void main(String[] args) throws Exception {
+        Pessoa pessoa1 = new Pessoa();
+
+        pessoa1.setIdade(20);
+        pessoa1.setNome("Carlos Kauan");
+
+        pessoa1.showDados();
+    }
+}
+~~~
