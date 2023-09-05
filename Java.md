@@ -55,19 +55,22 @@ Assim a varivel e iniciada sem nem um valor
 
 ### Orientação a objeto
 
-#### Private
+#### private
 
   Atributos de uma classe que so podem ser acessados dentro da classe da classe de origem
 
-#### Public
+#### public
 
   Atributos que podem ser acessados e visiveis dentro de fora da classe de origem
 
-#### Protected
+#### protected
 
   Atributos que pode ser acessados fora da classe de origem e mas não são visiveis fora da classe de origem
 
-#### Implemnetação
+#### default
+  Atributo que so pode ser acessado dentro do mesmo pacote, mas não fora do pacote de nascimento
+
+### Implemnetação
 
 Classe Pessoa com atributo privado e protected, com metodos gett e sett para manipulação dos atributos privados
 ~~~java
