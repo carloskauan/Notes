@@ -70,6 +70,9 @@ Assim a varivel e iniciada sem nem um valor
 #### default
   Atributo que so pode ser acessado dentro do mesmo pacote, mas não fora do pacote de nascimento
 
+### final
+  Atributo que so pode ter uma tribuição , depois de inicializado não pode ser mais mudado o valor, e pode ser usado em conjunto com os outros encapsulamentos
+
 ### Implemnetação
 
 Classe Pessoa com atributo privado e protected, com metodos gett e sett para manipulação dos atributos privados
