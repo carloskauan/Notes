@@ -403,6 +403,11 @@ E tbm existe tbm como criar auto properties, propriedades que se auto inplementa
 public string Nome{get; private set;}
 ~~~
 
+### Modificadores de acesso
+
+![image](https://github.com/carloskauan/Notes/assets/89313841/ff5a5bd7-b380-4dbc-9d3d-69a945a5432d)
+
+
 ## Classes são tipos de referencia
 
 Variaveis cujos os tipos são classes não devem ser entendidas como caixas, mas sim ponteiros, que indicam um lugar na memoria.
