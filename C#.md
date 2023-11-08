@@ -388,7 +388,7 @@ public Carro(string nome, float preço, int ano):this(nome, ano){
 ~~~
 Assim os atributos nome e preco serão definido pelo primeiro construtor que sera aproveitado pelo segundo, e o atributo ano sera definido pelo segundo.
 
-### Get Sett
+### Get Sett Properties
 
 Para definirmos uma proprieadade usamos
 ~~~cs
