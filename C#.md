@@ -571,3 +571,19 @@ int result;
 Teste.Triple(a, out result);
 ~~~
 Assim a variavel result vai receber o valor do triplo calculcado dentro da função
+
+## Boxing e Unboxing
+
+### Boxing
+Boxing e a conversão de um objeto tipo valor para um tipo referencia compativel. Por exemplo
+
+~~~cs
+int x = 20;
+Object obj = x;
+~~~
+
+Object e um tipo generico aonde aponta para um espaço na memoria heap, x uma variavel de tipo inteiro aonde esta na memoria stack, quando escrevemos o codigo acima, criamos uma variavel na memoria stack chamada obj que aponta para um espaço na memoria heap que contem o valor de x, ou seja 20;
+
+### Unboxing
+
+Unboxing e o precesso inverso do boxing, aonde temos uma variavel de tipo generico(referencia) e queremos converter para um tipo valor compativel, assim ao inves de termos uma referencia de obj na stack apontando para heap, temos um copia do valor que esta no espaço de memoria heap referenciado por obj  na memoria stack convertido que seria a variavel x.
