@@ -554,3 +554,20 @@ int a = 10;
 Teste.Triple(ref a);
 ~~~
 assim passamos a referencia da variavel a como parametro
+
+### out
+Diferente do ref que exigue que a variavel tenha que ter sido iniciada, o out não necessita disto, funcionando assim com varaiveis de saida, ou seja, servido para armazenar saidas de valores de uma função
+~~~cs
+public static int Triple(int a, out int triple){
+  triple = a * 3;
+}
+~~~
+
+Sendo necessario ser feito assim na implementação
+
+~~~cs
+int a = 10;
+int result
+Teste.Triple(a, out result);
+~~~
+Assim a variavel result vai receber o valor do triplo calculcado dentro da função
