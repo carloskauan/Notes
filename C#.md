@@ -538,3 +538,19 @@ Teste.Sum(1, 2, 3)
 ~~~
 
 Assim os valores passados como parametros na função, ficam na ordem de inserção dentro do vetor passado na declaração da função <code>params int [] numbers</code>
+
+### ref
+
+O moddificador de paramtro faz com que o parametro aponte difertamente para a varaivel que esta sendo passado e não fazendo uma copia temporia e salvando ela n seu escolpo
+~~~cs
+public static int Triple(ref int x){
+
+}
+~~~
+Assim indicando que so vai ser aceito tipos de referencia, e na chamada da função temos que usar
+
+~~~cs
+int a = 10;
+Teste.Triple(ref a);
+~~~
+assim passamos a referencia da variavel a como parametro
