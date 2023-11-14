@@ -567,7 +567,7 @@ Sendo necessario ser feito assim na implementação
 
 ~~~cs
 int a = 10;
-int result
+int result;
 Teste.Triple(a, out result);
 ~~~
 Assim a variavel result vai receber o valor do triplo calculcado dentro da função
