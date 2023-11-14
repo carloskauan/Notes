@@ -594,3 +594,12 @@ int y = (int) obj;
 ~~~
 Temos uma variavel de tipo generico(referencia) e queremos converter para um tipo valor compativel, assim ao inves de termos uma referencia de obj na stack apontando para heap, temos um copia do valor que esta no espaço de memoria heap referenciado por obj na memoria stack e convertido para inteiro na variavel y.
 > E para o unboxing e necessario fazer o casting e que seja um valor compativel
+
+## Foreach
+~~~cs
+string[] names = new string[] {"maria", "karina", "Angela"};
+
+foreach(string element in names){
+ System.Console.WriteLine(element);
+}
+~~~
