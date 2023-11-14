@@ -586,4 +586,10 @@ Object e um tipo generico aonde aponta para um espaço na memoria heap, x uma va
 
 ### Unboxing
 
-Unboxing e o precesso inverso do boxing, aonde temos uma variavel de tipo generico(referencia) e queremos converter para um tipo valor compativel, assim ao inves de termos uma referencia de obj na stack apontando para heap, temos um copia do valor que esta no espaço de memoria heap referenciado por obj  na memoria stack convertido que seria a variavel x.
+Unboxing e o precesso inverso do boxing.Por exemplo 
+~~~cs
+int x = 20;
+Object obj = x;
+int y = (int) obj;
+~~~
+Temos uma variavel de tipo generico(referencia) e queremos converter para um tipo valor compativel, assim ao inves de termos uma referencia de obj na stack apontando para heap, temos um copia do valor que esta no espaço de memoria heap referenciado por obj na memoria stack convertido que seria a variavel y.
