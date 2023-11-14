@@ -480,7 +480,7 @@ O valor nullable tem 3 operações basicas
 
 Uma operação aonde se em caso da falta do valor de uma valor pra variavel e retornado o valor padrão do tipo basico da variavel, assim existe um retorno ao inves de retornar null
 
-~~~
+~~~cs
 int? x = null;
 
 Console.WriteLine(x.GetValueOrDefault);
@@ -492,7 +492,7 @@ Aonde o retorno do console write seria o numero 0, pois e o valor padrão do tip
 
 Operação aonde e retornado o valor dentro de uma variavel do tipo nullable, se caso dentro dessa variavel tiver null, e retornado um erro pois esse metodo so e possivel ser usado em var nullable com valores
 
-~~~
+~~~cs
 double? x = 1.5;
 
 System.Console.WriteLine(x.Value);
@@ -504,7 +504,7 @@ O valor exibido seria de 1.5 pois
 
 Quando queremos atribuir a uma variavel nullable outra de valor normal e queremos fazer uma atribuição com uma verificação
 
-~~~
+~~~cs
 double? x = null;
 double y =  x ?? 0.0;
 
@@ -517,6 +517,24 @@ Aonde a saida do cw seria 0.0, pois caso x seja null, o valor atribuido a variav
 
 Para criarmos um vetor usamos
 
-~~~
+~~~cs
 string[] x = new string[n]
 ~~~
+## Modificadores de parametros
+
+Para criar um função que possa receber uma quantidade variavel de parametros usamos os modificadores de parametros da seguinte forma
+
+~~~cs
+public static int Sum(params int [] numbers){
+
+}
+~~~
+
+Nesse caso na chamada da função usariamos
+
+~~~cs
+Teste.Sum(1, 2, 3, 4, 5, 6)
+Teste.Sum(1, 2, 3)
+~~~
+
+Assim os valores passados como parametros na função, ficam na ordem de inserção dentro do vetor passado na declaração da função <code>params int [] numbers</code>
