@@ -1,4 +1,4 @@
-### Comandos
+## Comandos
 Compilação
 ~~~
 go buid arquivo.go
