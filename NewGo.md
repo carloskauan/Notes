@@ -15,10 +15,11 @@ Este comando compila em binarios e executa em tempo real
 
 O pacote "os" oferece funções para lidar com sistema operacional independente da plataforma.
 
-Argumentos de linha de comando são  estão disponiveis em uma variavel Chamada Args, que faz parte do pacte "os", assim seu nome em qualquer lugar fora do pacote "os" vai ser os.Args.
+Argumentos de linha de comando são  estão disponiveis em uma variavel Chamada Args, que faz parte do pacote "os", assim seu nome em qualquer lugar fora do pacote "os" vai ser os.Args.
 Args e um slice de string com comandos inseridos pelo terminal.
 O primeiro elemento de os.Args[0] e o nome do comando propriamente dito e os outros elementos são os argumentos apresentados ao programa quando sua execução é iniciada
-Uma for de filtrar os argumentos e usando a fatiação com slice[m:n], ficando dessa forma:
+
+Uma forma de filtrar os argumentos e usando a fatiação com slice[m:n], ficando dessa forma:
 ~~~
 os.Args[1:len(os.Args)]
 ~~~
