@@ -11,7 +11,7 @@ go run arquivo.go
 ~~~
 Este comando compila em binarios e executa em tempo real
 
-## Os
+## Args
 
 O pacote "os" oferece funções para lidar com sistema operacional independente da plataforma
 Argumentos de linha de comando são  estão disponiveis em uma variavel Chamada Args, que faz parte do pacte "os", assim seu nome em qualquer lugar fora do pacote "os" vai ser os.Args.
