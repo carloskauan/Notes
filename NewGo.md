@@ -20,7 +20,7 @@ Args e um slice de string com comandos inseridos pelo terminal.
 O primeiro elemento de os.Args[0] e o nome do comando propriamente dito e os outros elementos são os argumentos apresentados ao programa quando sua execução é iniciada
 
 Uma forma de filtrar os argumentos e usando a fatiação com slice[m:n], ficando dessa forma:
-~~~
+~~~go
 os.Args[1:len(os.Args)]
 ~~~
 Esse comando faz uma fatia do slice Args , pegando somente os argumentos que não são o primeiro elemento que corresponde ao comando principal.
