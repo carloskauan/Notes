@@ -23,4 +23,4 @@ Uma forma de filtrar os argumentos e usando a fatiação com slice[m:n], ficando
 ~~~
 os.Args[1:len(os.Args)]
 ~~~
-Esse comando faz uma fatia do slice Args , pegando somente os argumentos que não são o primeiro elemento que corresponde ao comando principal
+Esse comando faz uma fatia do slice Args , pegando somente os argumentos que não são o primeiro elemento que corresponde ao comando principal.
