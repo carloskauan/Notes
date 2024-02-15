@@ -45,3 +45,15 @@ for _, arg := range os.Args[1:]{
 }
 fmt.Println(s)
 ~~~
+
+Esse processos podem ser custosos para a cpu mas existe um metodo join que junta todos os elementos do slice em uma string só , separada por algum tipo de seperador da seguinte forma
+
+~~~
+fmt.Println(strings.Join(os.Args[1:]))
+~~~
+
+Mas caso formatação não seja de fato necessaria podemos apenas imprimir os agumentos com
+
+~~~
+fmt.Println(os.Args[1:])
+~~~
