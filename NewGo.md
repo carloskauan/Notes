@@ -43,5 +43,5 @@ for _, arg := range os.Args[1:]{
   s += sep + os.Args[i]
   sep = " "
 }
-	fmt.Println(s)
+fmt.Println(s)
 ~~~
