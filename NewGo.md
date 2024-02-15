@@ -101,8 +101,8 @@ Chamado de dup, e inspirado no comando uniq do Unix. Usamos da seguinte forma
 17:
 18:   for line, n := range counts {
 19:     if n > 1 {
-20:			  fmt.Printf("%d\t%s\n", n, line)
-21:		  }
+20:			 fmt.Printf("%d\t%s\n", n, line)
+21:		 }
 22:    }
 23:  }
 ~~~
