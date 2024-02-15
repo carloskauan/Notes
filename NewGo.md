@@ -24,3 +24,24 @@ Uma forma de filtrar os argumentos e usando a fatiação com slice[m:n], ficando
 os.Args[1:len(os.Args)]
 ~~~
 Esse comando faz uma fatia do slice Args , pegando somente os argumentos que não são o primeiro elemento que corresponde ao comando principal.
+
+~~~go
+var s, sep string
+for i := 1; i < len(os.Args); i++ {
+  s += sep + os.Args[i]
+  sep = " "
+}
+fmt.Println(s)
+~~~
+
+Nesse metodo e feita um for para percorrer o slice de Args pulando o primeiro argumento
+
+Tambem e possivel realizar um "foreach" para percorrer os elementos desse slice
+
+~~~go
+for _, arg := range os.Args[1:]{
+  s += sep + os.Args[i]
+  sep = " "
+}
+	fmt.Println(s)
+~~~
