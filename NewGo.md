@@ -82,6 +82,29 @@ Em "start" vai ser iniciado a contagem do tempo e vai ser verificado em segundos
 
 Chamado de dup, e inspirado no comando uniq do Unix. Usamos da seguinte forma
 
+~~~go
+1:  import (
+2:    "bufio"
+3:    "fmt"
+4:    "os"
+5:  )
+6:
+7:  func main() {
+8:    counts := make(map[string]int)
+9:    input := bufio.NewScanner(os.Stdin)
+10:  
+11:   for input.Scan() {
+12:     counts[input.Text()]++
+13:	  }
+15:
+16:   fmt.Println(counts)
+17:
+18:   for line, n := range counts {
+19:     if n > 1 {
+20:			  fmt.Printf("%d\t%s\n", n, line)
+21:		  }
+22:    }
+23:  }
 ~~~
 
-~~~
+
