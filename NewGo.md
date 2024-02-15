@@ -57,3 +57,23 @@ Mas caso formatação não seja de fato necessaria podemos apenas imprimir os ag
 ~~~go
 fmt.Println(os.Args[1:])
 ~~~
+
+## Medir tempo de execução
+
+Para medir o tempo que um codigo leva para ser executado usamos o pacote time com sua função/objeto time.Now() da seguinte forma
+
+~~~go
+import(
+  "fmt"
+  "time"
+)
+
+func main(){
+  start := time.Now()
+
+  //codigo a ser medido o tempo de execução
+
+  fmt.Println(time.Since(start).Seconds())
+}
+~~~
+Em "start" vai ser iniciado a contagem do tempo e vai ser verificado em segundos usando o time.Since.
