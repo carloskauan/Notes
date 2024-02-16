@@ -78,7 +78,7 @@ func main(){
 ~~~
 Em "start" vai ser iniciado a contagem do tempo e vai ser verificado em segundos usando o time.Since.
 
-## Enontrando linhas duplicadas
+## Econtrando linhas duplicadas
 
 Chamado de dup, e inspirado no comando uniq do Unix. Usamos da seguinte forma
 
