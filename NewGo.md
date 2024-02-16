@@ -106,5 +106,8 @@ Chamado de dup, e inspirado no comando uniq do Unix. Usamos da seguinte forma
 22:    }
 23:  }
 ~~~
+Linha 8: Temos A criação do nosso map que armazena um conjunto de chaves valores e oferece operações para armazenar, recuperar ou testar um item, que nesse caso sera o que armazenara as linhas digitas. Dentro map definimos que a chave sera do tipo string e o valor será do tipo inteiro
+
+linha 9: Instancia o pacote bufio para a entrada de dados pelo terminal
 
 
