@@ -110,4 +110,10 @@ Linha 8: Temos A criação do nosso map que armazena um conjunto de chaves valor
 
 linha 9: Instancia o pacote bufio para a entrada de dados pelo terminal
 
+Linha 11: Inicio do for que esta se repetindo enquanto tiver entrada de dados, ctrl + c para encerrar a entrada de dados
+
+Linha 12: E pego o valor em texto do na entrada e registrado no map como chave caso não exista dentro do map com valor 1(++) caso ja exista e feito um incremento no valor daquela chave
+
+Linha 13 a 20 : E feito uma varredura no map como um for each e para as chaves caso o valor seja maior que 1 imprime quantas vezes a chave foi repetida e o seu valor
+
 
