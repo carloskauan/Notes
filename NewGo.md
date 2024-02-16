@@ -116,4 +116,12 @@ Linha 12: E pego o valor em texto da entrada e registra no map como chave caso n
 
 Linha 13 a 20 : E feito uma varredura no map como um for each e para as chaves caso o valor seja maior que 1 imprime quantas vezes a chave foi repetida e o seu valor
 
-
+## Especifiadores de formato 
+Especificador   | Tipo de dado
+--------- | ------
+%d | Int
+%x, %o, %b | Int hexadecimal, otal e binario
+%t |  Booleano
+%c | Char e codigos unicode
+%s | String
+%T | Qualquer tipo
