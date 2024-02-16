@@ -118,9 +118,10 @@ Linha 13 a 20 : E feito uma varredura no map como um for each e para as chaves c
 
 ## Especifiadores de formato 
 Especificador   | Tipo de dado
---------- | ------
+:---------: | :------:
 %d | Int
 %x, %o, %b | Int hexadecimal, otal e binario
+%f, %g, %e | Floats
 %t |  Booleano
 %c | Char e codigos unicode
 %s | String
