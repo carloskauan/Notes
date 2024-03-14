@@ -603,3 +603,23 @@ foreach(string element in names){
  System.Console.WriteLine(element);
 }
 ~~~
+
+## Listas
+
+Listas são providas da classe List e do Namespace System.Collections.Generics, tendo a seguinte unitizização
+#### Import
+~~~c#
+using System.Collections.Generics;
+~~~
+
+#### Utilização
+~~~c#
+List<string> nomes = new List<string>();//Inicialização vazia;
+List<int> notas = new List<int>(){10, 5, 3};//Inicailização com valores settados
+~~~
+
+### Caracteristicas
+* Estrutura Homogenea (dados dos mesmo tipo)
+* Ordenada (elementos acessados por meio de posições)
+* Iniciada vazia e tamanho e inserção dimanica de acordo com a quantidade de elementos inseridos
+* Cada elemento ocupa um no da lista 
