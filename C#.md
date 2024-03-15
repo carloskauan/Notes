@@ -623,3 +623,8 @@ List<int> notas = new List<int>(){10, 5, 3};//Inicailização com valores settad
 * Ordenada (elementos acessados por meio de posições)
 * Iniciada vazia e tamanho e inserção dimanica de acordo com a quantidade de elementos inseridos
 * Cada elemento ocupa um no da lista 
+
+#### Add
+~~~c#
+listName.Add(element);
+~~~
