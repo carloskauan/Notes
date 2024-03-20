@@ -628,3 +628,13 @@ List<int> notas = new List<int>(){10, 5, 3};//Inicailização com valores settad
 ~~~c#
 listName.Add(element);
 ~~~
+Adiciona elementos no final da lista
+
+#### Insert
+
+~~~c#
+listName.Insert(2, elemente);
+~~~
+> Metodo recebe dois parametros, o primeiro e o index para inserção do elemente e o segundo parametro e o proprio elemento a ser inserido
+
+Este metodo adiciona um elmento em uma posição especifica fazendo com que o elemnto que esta naquela posição seja empurrado para a proxima e assim com os elementos subsequentes
