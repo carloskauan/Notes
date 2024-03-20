@@ -635,6 +635,6 @@ Adiciona elementos no final da lista
 ~~~c#
 listName.Insert(2, elemente);
 ~~~
-> Metodo recebe dois parametros, o primeiro e o index para inserção do elemente e o segundo parametro e o proprio elemento a ser inserido
+> Metodo recebe dois parametros, o primeiro e o index para inserção do elemento e o segundo o proprio elemento a ser inserido
 
 Este metodo adiciona um elmento em uma posição especifica fazendo com que o elemnto que esta naquela posição seja empurrado para a proxima e assim com os elementos subsequentes
