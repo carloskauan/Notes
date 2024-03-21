@@ -637,4 +637,18 @@ listName.Insert(2, elemente);
 ~~~
 > Metodo recebe dois parametros, o primeiro e o index para inserção do elemento e o segundo o proprio elemento a ser inserido
 
-Este metodo adiciona um elmento em uma posição especifica fazendo com que o elemnto que esta naquela posição seja empurrado para a proxima e assim com os elementos subsequentes
+Este metodo adiciona um elmento em uma posição especifica fazendo com que o elemnto que esta naquela posição seja empurrado para a proxima e assim com os elementos subsequentes 
+
+~~~cs
+List<string> names = new List<string>();
+names.Add("SALLY");
+names.Add("ARMANDO");
+names.Add("JOÃO");
+names.Add("MARIANA");
+
+foreach (var item in names){
+  System.Console.WriteLine(item);
+}
+
+System.Console.WriteLine(names.Find(e => e[0] == 'S'));
+~~~
