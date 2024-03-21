@@ -678,23 +678,3 @@ static void Main(string[] args){
       return e[0] == 'M';
     }
 ~~~
-> Este metodo utilizarr expressões lambda mas tbm pode ser utlizado usando funções normais
-
-~~~cs
-static void Main(string[] args){
-      List<string> names = new List<string>();
-      names.Add("SALLY");
-      names.Add("ARMANDO");
-      names.Add("JOÃO");
-      names.Add("MARIANA");
-
-      foreach (var item in names){
-        System.Console.WriteLine(item);
-      }
-
-      System.Console.WriteLine(names.Find(Sla));
-    }
-static bool Sla(string e){
-return e[0] == 'M';
-}
-~~~
