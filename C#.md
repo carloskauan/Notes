@@ -638,6 +638,10 @@ listName.Insert(2, elemente);
 > Metodo recebe dois parametros, o primeiro e o index para inserção do elemento e o segundo o proprio elemento a ser inserido
 
 Este metodo adiciona um elmento em uma posição especifica fazendo com que o elemnto que esta naquela posição seja empurrado para a proxima e assim com os elementos subsequentes 
+     
+#### Find e FindLast
+
+Este metodo realiza uma pesquisa e retorna o item encontrado
 
 ~~~cs
 List<string> names = new List<string>();
@@ -651,4 +655,6 @@ foreach (var item in names){
 }
 
 System.Console.WriteLine(names.Find(e => e[0] == 'S'));
+System.Console.WriteLine(names.FindLast(e => e[0] == 'S'));
 ~~~
+>Metodo utiliza expressão lambda e tbm pode usar função normal
