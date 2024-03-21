@@ -678,3 +678,12 @@ static void Main(string[] args){
       return e[0] == 'M';
     }
 ~~~
+
+#### FindIndex FindLastIndex
+
+Assim como a função Find e FindLast mas ao inves de retornar o elemento retorna o index do elemento no vetor
+
+~~~cs
+System.Console.WriteLine(names.FindIndex(e => e[0] == 'S'));
+System.Console.WriteLine(names.FindLastIndex(e => e[0] == 'S'));
+~~~
