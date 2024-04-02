@@ -688,7 +688,7 @@ names.FindIndex(e => e[0] == 'S');
 names.FindLastIndex(e => e[0] == 'S');
 ~~~
 
-#### Remove() RemoveAll()
+#### Remove
 
 Comandos para remover um elemento de uma lisa, seja ele um elemento especifico e unico com o Remove ou varios elementos de acordo com o predicato com o RemoveAll
 
@@ -697,3 +697,11 @@ names.Remove("SALLY");
 names.Remove(e => e[0] == 'A');
 ~~~
 > No exemplo usamos o remove para retirar "SALLY" da lista e no removeall retiramos todos os nomes que começam com a letra "A";
+
+Tambem temos comandos para retirar elemento de um index especifico  como removeat e para remove elementos em um range com removerange
+
+~~~cs
+names.RemoveAt(2);
+names.RemoveRange(1, 3); // Primeiro paramaetro e a posição de inicio e o segundo quantos elementos serão removidos a partir dele
+~~~
+> No removeat estamos removendo o elemento na posição da lista que se refere a "JOÃO" e no removerange estamos removendo 3 elementos a partir da posição 1 que seriam "ARMANDO", "JOÃO" e "MARIANA".
