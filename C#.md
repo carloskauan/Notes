@@ -684,6 +684,16 @@ static void Main(string[] args){
 Assim como a função Find e FindLast mas ao inves de retornar o elemento retorna o index do elemento na list
 
 ~~~cs
-System.Console.WriteLine(names.FindIndex(e => e[0] == 'S'));
-System.Console.WriteLine(names.FindLastIndex(e => e[0] == 'S'));
+names.FindIndex(e => e[0] == 'S');
+names.FindLastIndex(e => e[0] == 'S');
 ~~~
+
+#### Remove() RemoveAll()
+
+Comandos para remover um elemento de uma lisa, seja ele um elemento especifico e unico com o Remove ou varios elementos de acordo com o predicato com o RemoveAll
+
+~~~cs
+names.Remove("SALLY");
+names.Remove(e => e[0] == 'A');
+~~~
+> No exemplo usamos o remove para retirar "SALLY" da lista e no removeall retiramos todos os nomes que começam com a letra "A";
