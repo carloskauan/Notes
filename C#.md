@@ -705,3 +705,12 @@ names.RemoveAt(2);
 names.RemoveRange(1, 3); // Primeiro paramaetro e a posição de inicio e o segundo quantos elementos serão removidos a partir dele
 ~~~
 > No removeat estamos removendo o elemento na posição da lista que se refere a "JOÃO" e no removerange estamos removendo 3 elementos a partir da posição 1 que seriam "ARMANDO", "JOÃO" e "MARIANA".
+
+### Vetores
+
+Para declarar vetores utilizamos a seguinte sintax
+
+~~~cs
+int[,] notas = new int[x, y];
+~~~
+>> x seria a quantidade de linhas e y a quantidade de colunas..
