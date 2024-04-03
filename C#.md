@@ -723,7 +723,13 @@ notas.Length
 Retorna a quantidade total de posições no vetor
 
 ~~~cs
-notas.Rank
+notas.Rank()
 ~~~
 
 Retorna a quantidade de linhas no vetor
+
+~~~cs
+notas.GetLength(0); 0/1
+~~~
+
+Retorna a quantidade de linhas ou colunas do vetor , usando 0 retorna linhas e usando 1 retorna colunas
