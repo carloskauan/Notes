@@ -713,15 +713,17 @@ Para declarar vetores utilizamos a seguinte sintax
 ~~~cs
 int[,] notas = new int[x, y];
 ~~~
->> x seria a quantidade de linhas e y a quantidade de colunas..
+> x seria a quantidade de linhas e y a quantidade de colunas..
 
 Para matrizes temos alguns metodos especais
 ~~~cs
 notas.Length
 ~~~
-> Retorna a quantidade total de posições no vetor
+
+Retorna a quantidade total de posições no vetor
 
 ~~~cs
 notas.Rank
 ~~~
-> Retorna a quantidade de linhas no vetor
+
+Retorna a quantidade de linhas no vetor
