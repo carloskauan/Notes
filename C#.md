@@ -724,4 +724,4 @@ notas.Length
 ~~~cs
 notas.Rank
 ~~~
-> Retorna a quantidade de linhas e colunas
+> Retorna a quantidade de linhas no vetor
