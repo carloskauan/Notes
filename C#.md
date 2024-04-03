@@ -742,4 +742,6 @@ No c# conseguimos inferir o tipo das variaveis, fazer que a variavel seja do tip
 var idade = 15;
 ~~~
 
+### Fatiamento
+
 Nesse caso a variavel idade sera do tipo inteiro
