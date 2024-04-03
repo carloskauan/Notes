@@ -733,3 +733,13 @@ notas.GetLength(0); 0/1
 ~~~
 
 Retorna a quantidade de linhas ou colunas do vetor , usando 0 retorna linhas e usando 1 retorna colunas
+
+### var
+
+No c# conseguimos inferir o tipo das variaveis, fazer que a variavel seja do tipo do dado inserido nela sem precisar declaração explicita de tipo
+
+~~~cs
+var idade = 15;
+~~~
+
+Nesse caso a variavel idade sera do tipo inteiro
