@@ -754,6 +754,6 @@ Nesse caso a variavel idade sera do tipo inteiro
 #### DateTime
 
 ![image](https://github.com/carloskauan/Notes/assets/89313841/72aefb7b-d5c5-484d-a472-559e9cecef63)
-
-
 ![image](https://github.com/carloskauan/Notes/assets/89313841/9cd32568-ad8f-4ccd-a0de-b97e8236c971)
+![image](https://github.com/carloskauan/Notes/assets/89313841/4e9fc88e-4d57-4bb4-b766-57ac8dbb11d9)
+
