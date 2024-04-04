@@ -753,7 +753,13 @@ Nesse caso a variavel idade sera do tipo inteiro
 
 #### DateTime
 
-![image](https://github.com/carloskauan/Notes/assets/89313841/72aefb7b-d5c5-484d-a472-559e9cecef63)
-![image](https://github.com/carloskauan/Notes/assets/89313841/9cd32568-ad8f-4ccd-a0de-b97e8236c971)
-![image](https://github.com/carloskauan/Notes/assets/89313841/4e9fc88e-4d57-4bb4-b766-57ac8dbb11d9)
+![image](https://github.com/carloskauan/Notes/assets/89313841/0ff70983-2aed-49a3-a2ec-e26879d86f67)
+![image](https://github.com/carloskauan/Notes/assets/89313841/69136946-ceff-4738-aba6-0bdfed24a86d)
+![image](https://github.com/carloskauan/Notes/assets/89313841/721cee42-87ca-4da1-8651-315f5e154d93)
+![image](https://github.com/carloskauan/Notes/assets/89313841/5b98178f-00ad-4103-8605-afd6fd4bc510)
+![image](https://github.com/carloskauan/Notes/assets/89313841/3258a858-deb2-4ae1-8719-8f9b0ebfc7c0)
+![image](https://github.com/carloskauan/Notes/assets/89313841/273ae3a5-e791-417b-ae60-3eafac3e2bcc)
 
+
+
+#### TimeSpan
