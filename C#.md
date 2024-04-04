@@ -747,4 +747,12 @@ Nesse caso a variavel idade sera do tipo inteiro
 ### Fatiamento
 
 ![image](https://github.com/carloskauan/Notes/assets/89313841/5f12ebc3-974f-4cdd-9547-2557870d3934)
+![image](https://github.com/carloskauan/Notes/assets/89313841/654be1d2-5870-4b79-9044-2612815110c7)
 
+### Time
+
+#### DateTime
+
+E um objeto do tipo struct(valor) que internamente aramzena "ticks"(100 nanosegundos) desde meia noite de janeiro do ano 1 da era comum.
+
+![image](https://github.com/carloskauan/Notes/assets/89313841/9cd32568-ad8f-4ccd-a0de-b97e8236c971)
