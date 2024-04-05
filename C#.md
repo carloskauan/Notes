@@ -706,7 +706,7 @@ names.RemoveRange(1, 3); // Primeiro paramaetro e a posição de inicio e o segu
 ~~~
 > No removeat estamos removendo o elemento na posição da lista que se refere a "JOÃO" e no removerange estamos removendo 3 elementos a partir da posição 1 que seriam "ARMANDO", "JOÃO" e "MARIANA".
 
-### Vetores
+## Vetores
 
 Para declarar vetores utilizamos a seguinte sintax
 
@@ -734,7 +734,7 @@ notas.GetLength(0); 0/1
 
 Retorna a quantidade de linhas ou colunas do vetor , usando 0 retorna linhas e usando 1 retorna colunas
 
-### var
+## var
 
 No c# conseguimos inferir o tipo das variaveis, fazer que a variavel seja do tipo do dado inserido nela sem precisar declaração explicita de tipo
 
@@ -744,10 +744,53 @@ var idade = 15;
 
 Nesse caso a variavel idade sera do tipo inteiro
 
-### Fatiamento
+## Fatiamento
 
 ![image](https://github.com/carloskauan/Notes/assets/89313841/5f12ebc3-974f-4cdd-9547-2557870d3934)
 ![image](https://github.com/carloskauan/Notes/assets/89313841/654be1d2-5870-4b79-9044-2612815110c7)
 
-### Time
+## Enumerações 
 
+#### Caracteristicas
+Enumerações são um tipo especial que serve para especificar de forma literal um conjunto de constanates relacionadas
+
+Palavra chave : enum, e uma estrutura do tipo valor 
+
+Vantagens: Melhor semantica, codigo mais legivel e auxiliado pelo compilador, que não deixa ser settado um valor diferente do que esta na enumeração
+
+#### Utilização
+
+Para declarar uma enumeração usamos
+
+~~~cs
+enum OrdeStatus : int {
+  PendingPayment = 0,
+  Processing = 1,
+  Shipped = 2,
+  Delivered = 3, 
+}
+~~~
+
+Para usarmos 
+
+~~~cs
+OrdeStatus os = OrderStatus.PendingPayment;
+~~~
+
+Assim definimos o valor de PendingPayment e qualquer outro tipo de valor da enum para a variavel os
+
+#### Conversões
+
+Conseguimos converter um valor de enum para string da seguinte forma
+
+~~~cs
+string txt = OrderStatus.PedingPayment.ToString();
+~~~
+
+Assim colocamos entre aspas os possiveis valores da enum para ser convertido em string
+
+E para converter string para um possivel valor de enum usamos
+
+~~~cs
+OrderStatus os = Enum.Parse<OrderStatus>("Pricessing");
+~~~
