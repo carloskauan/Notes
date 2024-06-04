@@ -804,7 +804,8 @@ Utilizamos no metodo override de tostring, para que assim que imprirmos a classe
 ~~~cs
 using System.Text
 
-class Carro{
+class Carro
+{
   string Nome =  "SANDERO";
   int Ano = 2012;
 
