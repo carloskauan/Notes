@@ -794,3 +794,28 @@ E para converter string para um possivel valor de enum usamos
 ~~~cs
 OrderStatus os = Enum.Parse<OrderStatus>("Pricessing");
 ~~~
+
+## StringBuilder
+
+Para casos em que precisamos convereter um objeto a algo imprimivel utilizamos a class string builder que paga os dados de uma classe de acordo com a nossa montagem e transforma em uma unica string processada.
+
+Utilizamos no metodo override de tostring, para que assim que imprirmos a classe vejamos ela formatada
+
+~~~cs
+using System.Text
+
+class Carro{
+  string Nome =  "SANDERO";
+  int Ano = 2012;
+
+  public overrider ToString()
+  {
+    StringBuilder sb = new StringBuilder();
+    sb.AppendLine(Nome)// Adiciona informações com quebra de linha
+    sb.Append("Ano: ")// Adiciona sem quebra de linha
+    sb.Append(Ano)
+
+    return sb.ToString();
+  }
+}
+~~~
