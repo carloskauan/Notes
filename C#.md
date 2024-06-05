@@ -823,3 +823,15 @@ class Carro
 
 ## Herança
 
+São funcionalidades para que classe herden outras e possam utilizar seus atributos e metodos, e tbm ter sua particularidades
+
+~~~cs
+class Animal {
+  public string Nome;
+  public int Idade;
+
+  public void Respirar(){
+    Console.WriteLine("Respirando");
+  }
+}
+~~~
