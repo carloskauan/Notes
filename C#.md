@@ -825,6 +825,7 @@ class Carro
 
 São funcionalidades para que classe herden outras e possam utilizar seus atributos e metodos, e tbm ter sua particularidades
 
+Tendo como exemple a superclasse/classe pai Animal 
 ~~~cs
 class Animal {
   public string Nome;
@@ -835,3 +836,44 @@ class Animal {
   }
 }
 ~~~
+
+E tendo as subclasses/classes filhas Humano
+
+~~~cs
+class Humano : Animal{ // : Animal para dizer que Humano herda a classe animal
+  public int Maos = 2;
+  public Familia = "Souza";
+
+
+  public void Falar(){
+    Console.WriteLine("Falando...");
+  }
+}
+~~~
+
+Assim a subclasse Humano tem acesso a todos os metodos e atributos da classe animal amas tbm seus metos e atrinutos especificos
+
+E alem disso tbm e possivel que a subclasse execute metodos da super classe dentro da suas classes antes da suas particularidades
+
+Considerando o metodo construtor na classe animal
+~~~cs
+public Animal(string nome, int idade){
+  Nome = nome;
+  Idade = idade;
+}
+~~~
+
+Podemos herdar o metodo construtor da superclasse e esxecutala antes da particualridade da sub classe da seguinte forma
+~~~cs
+public Humano(string nome, int idade, int maos, string familia) : base(nome, idade){
+  Maos = maos;
+  Familia = familia;
+}
+~~~
+
+Tambem podemos definir que certo atributos e setters e getter de uma super classe possam ser acessadas por classes que a herdam da seguinte forma
+
+~~~cs
+public int Idade {protected get; protected set;}
+~~~
+Assim somente classes que herdam Aanimal podem ver e modificar o atributo Idade, sendo bloqueado pra qualquer outra classe que não herde diretamente a classe Animal
