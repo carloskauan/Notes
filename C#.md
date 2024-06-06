@@ -885,3 +885,14 @@ Para lançar uma resquisição http em c# usamos
 ~~~cs
 HttpsCliente().GetStringAsync("url");
 ~~~
+
+## Microsoft.EntityFrameworkCore.InMemory
+
+Framework para armazenamneto de dados em memoria
+
+~~~cs
+dotnet add package Microsoft.EntityFrameworkCore.SqlServer
+~~~
+
+Comando acima para a instalação do frameworks
+
