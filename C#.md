@@ -877,3 +877,11 @@ Tambem podemos definir que certo atributos e setters e getter de uma super class
 public int Idade {protected get; protected set;}
 ~~~
 Assim somente classes que herdam Aanimal podem ver e modificar o atributo Idade, sendo bloqueado pra qualquer outra classe que não herde diretamente a classe Animal
+
+## Request
+
+Para lançar uma resquisição http em c# usamos
+
+~~~cs
+HttpsCliente().GetStringAsync("url");
+~~~
