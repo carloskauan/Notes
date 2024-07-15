@@ -878,6 +878,25 @@ public int Idade {protected get; protected set;}
 ~~~
 Assim somente classes que herdam Aanimal podem ver e modificar o atributo Idade, sendo bloqueado pra qualquer outra classe que não herde diretamente a classe Animal
 
+### Sobrescrita de metodos
+Para sobrescrever um metodo da super classe na sub classe precisamos da especificar que o metodo da super classe pode ser sobreposto com a palavara reservada virtual
+~~~cs
+class Super{
+  public virtual void SayHello(){
+    Console.WriteLine("HELLO");
+  }
+}
+~~~
+
+E Na sub classse usamos o a palavra reservada override da e definimos o metodo que sobrescrevera o da super classe
+~~~cs
+class Sub: Super{
+  public override void SayHello(){
+    Console.WriteLine("HELLO MIS AMIGOS");
+  }
+}
+~~~
+
 ## Request
 
 Para lançar uma resquisição http em c# usamos
