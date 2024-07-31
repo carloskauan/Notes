@@ -896,6 +896,17 @@ class Sub: Super{
   }
 }
 ~~~
+### Base
+Dentro da sub classe e possivel usar metodos e atributos da super classe diretamente  usanda a palavra reservada base.
+~~~cs
+base.SayHello();
+base.Nome;
+~~~
+Assim puchamos metodos e atributos da super classe
+
+### Sealed
+
+Usamos esta diretiva diretamente em uma sub classe para idicar que o metodo v
 
 ## Request
 
