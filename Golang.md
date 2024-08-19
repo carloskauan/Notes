@@ -2,6 +2,12 @@
 Não devemos por ; no final da linhas
 Assim como no C devemos importar pacotes para utilizar algumas funções
 
+## Compilação
+ Para compilarmos um projeto ou arquivo go para um so especifico usamos
+~~~go
+GOOS=windows go build name.go
+~~~
+
 ## Arquivo principal ##
 Para indicar que aquele arquivo e o principal devemos colocara a primeira linha do codigo como
 ~~~go
