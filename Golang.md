@@ -50,6 +50,9 @@ func main(){
   fmt.Println(id)
 }
 ~~~
+## Tipos primitivos ##
+
+Os tipos inteiros se dividem em 4 tipos int8. int16, int32 e int64 assim suportando numeros com tamanho de 8 bits a 64. O int padrão utiliza o sistema operacional como base para selecionar o tamanho sendo settado 64 para sistemas de 64 bits e 32 para sistema de 32 bits
 
 ## Funções de modulos ##
 As funções de modulos sempre tem o nome do modulo e a primeira letra da função maiuscula
