@@ -9,6 +9,13 @@ const express = require("express");
 const app = express();
 ~~~
 
+Precisamos declarar suas rotas ante de inciar o servidor usando os metodos http e seu tipo de resposta
+~~~js
+app.get("/", (req, res)=>{
+  res.send("MSG...");
+});
+~~~
+
 Para iniclaizar o servidor usamos o comando
 
 ~~~js
@@ -18,13 +25,6 @@ app.listen(7070 ,function(err){
   }else{
     console.log("SERVIDOR INICIADO");
   };
-});
-~~~
-
-Para de fato o servidor inciar precisamos declarar suas rotas ante de inciar o servidor usando os metodos http e seu tipo de resposta
-~~~js
-app.get("/", (req, res)=>{
-  res.send("MSG...");
 });
 ~~~
 
