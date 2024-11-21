@@ -27,3 +27,6 @@ app.get("/", (req, res)=>{
   res.send("MSG...");
 });
 ~~~
+
+## Parametros
+
