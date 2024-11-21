@@ -20,3 +20,10 @@ app.listen(7070 ,function(err){
   };
 });
 ~~~
+
+Para de fato o servidor inciar precisamos declarar suas rotas ante de inciar o servidor usando os metodos http e seu tipo de resposta
+~~~js
+app.get("/", (req, res)=>{
+  res.send("MSG...");
+});
+~~~
