@@ -11,6 +11,43 @@ go run arquivo.go
 ~~~
 Este comando compila em binarios e executa em tempo real
 
+## Funções
+
+Em golang temos dois tipos de funções.
+#### Padrão
+~~~go
+func sla(n1, n2 int)int{
+  return 2
+}
+~~~
+Onde sua declaração e feita fora da função main
+
+#### De variavel
+Basicamente uma função anonima onde pode ser declarada e usada dentro da função main ou outras funções
+
+~~~go
+func main(){
+  var sla = func(){
+    fmt.Println("Slaa")
+  }
+
+  sla()
+}
+~~~
+
+#### Multiplos retornos
+Um tipo de função onde temos dois retornos diferentes sendo usados da seguinte forma
+~~~go
+func main(){
+  var sla = func()(string, string){
+    return "Slaaa111", "Slaaa222"
+  }
+
+  var sla1, sla2 string = sla()
+}
+~~~
+Assim temos dois diferentes tipos de retorno para uma unica função
+
 ## Args
 
 O pacote "os" oferece funções para lidar com sistema operacional independente da plataforma.
