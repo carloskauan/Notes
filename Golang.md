@@ -723,3 +723,16 @@ Para criarmos um projeto com padrão MVC precisamos da seguinte estrutura de pas
 * models / Que sera responsavel pelas opreações do banco de dados
 * router / Que sera responsavel por carregar nossas rotas
 * controller / Que sera responsavel por carregar a logica de cada rota
+
+## Auto reload
+Para utilizar a feramenta Air para autoreload em golang temos que dar o comanndo 
+
+~~~
+go get install https://github.com/air-verse/air
+~~~
+
+Assim o proprio go ira innstalar e configurar o air no sistema e para inicar o auto reload usamos o comando...
+~~~
+air
+~~~
+No terminal no diretorio do projeto
