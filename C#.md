@@ -371,7 +371,7 @@ public Carro(){
 ~~~
 Assim quando o metodo e instanciado o que sera acionado sera somente o que tem a quantidade de parametros passado apenas
 
-### This
+### Herança de metodos
 
 A palavra this serve tanto para referenciar a instancia do proprio obejeto quanto para aproveitar metodos construtores
 
