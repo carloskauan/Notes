@@ -28,5 +28,21 @@ app.listen(7070 ,function(err){
 });
 ~~~
 
-## Parametros
+## FS E SERIALIZAÇÃO JSON
+
+ler arquivos
+~~~
+let dados = fs.readFileSync("./path.json", {encoding: "utf-8"})
+~~~
+
+Criar arquivos com conteudo
+~~~
+fs.writeFileSync("./path.json", JSON.stringify(data), {encoding: "utf-8"})
+~~~
+
+~~~
+fs.appendFileSync("./path.json", JSON.stringify(newData), (err)=>{
+  console.log(err)
+})
+~~~
 
