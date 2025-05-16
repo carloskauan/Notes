@@ -1,4 +1,4 @@
-# Guia de Condução – Evento 5 Anos Skypiea Programming
+ # Guia de Condução – Evento 5 Anos Skypiea Programming
 
 ## Antes do Evento
 
@@ -54,6 +54,36 @@
 - Após o tempo, cada grupo apresenta a solução.
 - **Fala sugerida:**  
   "Vamos exercitar o raciocínio lógico sem código! Em grupos, vocês vão pensar e explicar a solução de um desafio simples."
+
+  Crie um algoritmo que decide qual super-herói ganharia numa batalha de quem come mais pizza
+Critérios: velocidade para devorar, resistência a indigestão e capacidade de usar poderes para trapacear.
+
+Desenvolva um sistema para gerenciar a agenda de um unicórnio que só trabalha em dias de chuva arco-íris
+Como ele agenda encontros, treinos e festas com outros seres mágicos?
+
+Projete um app para ajudar fantasmas a escolherem suas melhores táticas de assustar humanos
+Critérios: susto rápido, criatividade e “nível de barulho”.
+
+Imagine um algoritmo para ordenar os motivos mais absurdos para faltar no trabalho
+Exemplo: “fui abduzido por aliens”, “gato comeu meu relatório”.
+
+Crie um framework desenvolvido por zumbis que só aceita código escrito em linguagem morta
+Regras: só funciona após meia-noite e exige cérebro fresco para compilar.
+
+Desenvolva um sistema que ajuda gnomos de jardim a organizar festas surpresa para os humanos
+Como manter o segredo e garantir que a festa não vire confusão?
+
+Projete um programa para ajudar robôs a entenderem sarcasmo humano
+Critérios: detectar tom de voz, expressões faciais e contexto absurdo.
+
+Crie um algoritmo para decidir qual personagem de desenho animado seria melhor em um reality show de sobrevivência
+Considerando habilidades bizarras, carisma e tendência a causar confusão.
+
+Imagine um sistema para um concurso de karaokê entre alienígenas com gostos musicais estranhos
+Como montar a playlist e avaliar as performances?
+
+Desenvolva um app para ajudar super-vilões a organizar seus planos de dominação mundial sem serem descobertos
+Critérios: sigilo, criatividade e quantidade de capangas disponíveis.
 
 ### 6. Atividade Interativa 2: Memes da Comunidade (20 min)
 - Peça para os participantes enviarem nos chats memes que representem momentos, erros ou situações engraçadas na programação.
