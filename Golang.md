@@ -44,6 +44,26 @@ Podemos tambem usar declaração curta de variaveis em sequencia, assim declaran
 var nome, altura, solteiro = "Marcos", 1.85, false
 ~~~
 
+Em caso de funções com multiplos retornos em que temos uma linha para declarar as seguintes variaveis que não existem, se chamarmos uma varivel que ja existe no contexto de declaração curta, ela não criara uma nova varivel mas sim so atribuirá um novo valor a ela
+
+~~~go
+content1, err := os.Open()
+content2, err := os.Open()
+~~~
+Nesse caso na primeira linha , de fato está sendo criado as duas variveis e sendo atribuido a ela os valores de retorno da função os.Open
+Na segunda linha somente a varivel content2 está sendo criada , a varivel err como ja foi criada naquele escopo so tem um novo valor atribuido.
+Porem e necessario pelo menos uma nova varivel a ser criada para usar a sintaze de <code>:=</code>
+~~~go
+content1, err := os.Open()
+content1, err := os.Open()
+~~~
+Apresenta erro na linha 2 pois as duas vareiveis count1 e err ja existem naquele escopo inpedindo o uso da sintaxe curta, pois nem uma das duas seram criadas 
+~~~go
+content1, err := os.Open()
+content1, err = os.Open()
+~~~
+Complia sem problemas pois na segunda linha embora as duas variveis ja existam não esta sendo utilizada a sintaxe de declaração curta, assim apenas atribuindo novos valores as variaveis que ja existem.
+
 ## Constantes
 Para usarmos constantes temos que declara-las fora da função main e antes de qualquer outra função
 
