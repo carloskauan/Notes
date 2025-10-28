@@ -15,10 +15,10 @@ package main
 ~~~
 
 ## Variaveis ##
-As variavei são tipadas e declaradas com var mas seu tipo e expecificado dps do nome da variavel
+As variavei em go seguem um formato de declaração
 
 ~~~gol
-var nome string = "Caralho"
+var nome tipo = valor
 ~~~
 
 As variaveis do tipo float existem dois tipo float32 para reais pequenos e float64 para reais grandes equivalente ao double
@@ -37,6 +37,13 @@ E tambem temos a declaração curta de variaveis aonde não precizamos por o pre
 ~~~go
 nome := "Carlos"
 ~~~
+
+Podemos tambem usar declaração curta de variaveis em sequencia, assim declarando varias vareiaveis em seus valores em uma unica linha
+
+~~~go
+var nome, altura, solteiro = "Marcos", 1.85, false
+~~~
+
 ## Constantes
 Para usarmos constantes temos que declara-las fora da função main e antes de qualquer outra função
 
