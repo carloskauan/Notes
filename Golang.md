@@ -54,6 +54,29 @@ Quando uma variável é declarada sem valor inicial:
 - Strings → `""` (string vazia)
 - Booleanos → `false`
 
+
+### Ponteiros
+
+Um ponteiro e um endereço de memoria de uma variavel. Desse modo, um ponteiro é o local na memoria onde o valor está armazenado
+
+Para utilizarmos o ponteiro de uma variavel utilizamos o prefixo "&"
+```go
+var x int =  10
+y := &x
+```
+Assim em y temos o endereço de memoria de x e não o seu valor, mas para podermos manipular o conteudo do ponteiro temos que utilizar "*"
+```go
+*y = 20
+```
+Assim conseguimos acessar o valor do conteudo do ponteiro,mas necessariamente so podemos utilizar * em variveis que armazenam algum ponteiro
+
+#### Tipagem de ponteiros
+
+Assim como podemos criar variveis para armazenar tipos de dados diferentes tamebm conseguimos criar ponteiros que armazenam tipos de dados especificos
+```go
+
+```
+
 ### Inferência de tipo
 
 Podemos declarar variáveis sem especificar o tipo — o compilador infere automaticamente:
