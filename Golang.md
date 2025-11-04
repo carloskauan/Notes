@@ -74,6 +74,17 @@ Assim conseguimos acessar o valor do conteudo do ponteiro,mas necessariamente so
 
 Assim como podemos criar variveis para armazenar tipos de dados diferentes tamebm conseguimos criar ponteiros que armazenam tipos de dados especificos
 ```go
+var x *int = 10
+```
+Nesse caso *int indica o tipo daquela variavel e um ponteiro que aponta para um valor inteiro
+E o valor 0 de um ponteiro de qualquer tipo é nil. O teste
+```go
+x != nil 
+```
+Essa comparação se e possivel ser feita de x tiver um ponteiro, se for uma variavel comum da erro e se for um ponteiro vazil retorna false
+É verdadeiro se x aponta para uma variavel
+Ponteiros são comparaveis se e somente se os dois apontarem para o mesmo endereço
+´´´go
 
 ```
 
